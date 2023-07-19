@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>F1 OFFICIAL | FORMULA1.com</title>
+    <link rel="stylesheet" href="aryan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="initClock()">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="61fc02163cf0e70004222072 (2).png" alt="F1.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#" class="nav-upper">HOME</a></li>
+            <li class="item"><a href="#" class="nav-upper">TEAM</a></li>
+            <li class="item"><a href="#" class="nav-upper">SCHEDULE</a></li>
+            <li class="item"><a href="#" class="nav-upper" id="driver-main-menu">DRIVER</a>
+                <div class="nav-secondary" style="display: none;" id="nav-secondary">
+                    <div class="ns-wrapper">
+                        <div class="navwidth">
+                            <div class="nav-contents">
+                                <div class="nav-header">
+                                    <a class="FRAME">HALL OF FRAME</a>
+                                    <!-- <a href=""></a> -->
+                                </div>
+                                <div class="nav-list drivers" id="driver-submenu">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </li>
+            <li class="item"><a href="https://f1tv.formula1.com/" target="_blank" class="nav-upper">F1 TV</a></li>
+            <li class="item"><a href="#" class="nav-upper">STORE</a></li>
+            <li class="item"><a href="#" class="nav-upper">CRASH</a></li>
+            <li class="item"><a href="#" class="nav-upper">SIGN IN</a></li>
+
+        </ul>
+
+
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>,
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+
+    <section id="home">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="Untitled design (1) copy.mp4" type="video/mp4">
+        </video>
+        <div class="home_content">
+            <h1 class="h-primary"></h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="back-url">
+            <div class="heading-main">
+                <div class="heading-sub">
+                    <div class="div">
+                        <img src="61fc02163cf0e70004222072 (2).png" alt="">
+                    </div>
+                    <span class="h">Drivers Standings</span>
+                </div>
+            </div>
+
+            <div class="driver-stand">
+                <div class="top-1">
+                    <div class="top-1sub1">
+                        <a href="">
+                            <img src="image.avif" alt="">
+                        </a>
+                    </div>
+                    <div class="top-1sub2">
+                        <span class="Sergio-rank">Sergio</span>
+                        <span class="Sergio-flag">
+                            <img src="Mexico.webp" alt="">
+                        </span>
+                        <span class="Perez-rank">PEREZ</span>
+                    </div>
+                </div>
+                <div class="top-1-1">
+                    <div class="top-1sub1">
+                        <a href="">
+                            <img src="image (1).avif" alt="">
+                        </a>
+                    </div>
+                    <div class="top-1sub2">
+                        <span class="Sergio-rank">Max</span>
+                        <span class="Sergio-flag">
+                            <img src="Netherlands.webp" alt="">
+                        </span>
+                        <span class="Perez-rank">VERSTAPPEN</span>
+                    </div>
+                </div>
+                <div class="top-1">
+                    <div class="top-1sub1">
+                        <a href="">
+                            <img src="image (2).avif" alt="">
+                        </a>
+                    </div>
+                    <div class="top-1sub2">
+                        <span class="Sergio-rank">Fernando</span>
+                        <span class="Sergio-flag">
+                            <img src="image (3).avif" alt="">
+                        </span>
+                        <span class="Perez-rank">ALONSO</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="standings">
+            <ul class="f1-podium">
+                <li class="ranking">
+                    <span class="podium-rank">1</span>
+                    <span class="team-color" style="background: #3671C6;"></span>
+                    <span class="driver-name">
+                        <span class="firstn">Max</span>
+                        <span class="lastn">Verstappen</span>
+                    </span>
+                    <span class="teamn">Red Bull Racing</span>
+                    <span class="podiumright">
+                        <span class="points">229 PTS</span>
+                    </span>
+                </li>
+                <li class="ranking">
+                    <span class="podium-rank">2</span>
+                    <span class="team-color" style="background: #3671C6;"></span>
+                    <span class="driver-name">
+                        <span class="firstn">Sergio</span>
+                        <span class="lastn">Perez</span>
+                    </span>
+                    <span class="teamn">Red Bull Racing</span>
+                    <span class="podiumright">
+                        <span class="points">156 PTS</span>
+                    </span>
+                </li>
+                <li class="ranking">
+                    <span class="podium-rank">3</span>
+                    <span class="team-color" style="background: #358C75;"></span>
+                    <span class="driver-name">
+                        <span class="firstn">Fernando</span>
+                        <span class="lastn">Alonso</span>
+                    </span>
+                    <span class="teamn">Aston Martin</span>
+                    <span class="podiumright">
+                        <span class="points">137 PTS</span>
+                    </span>
+                </li>
+                <li class="ranking">
+                    <span class="podium-rank">4</span>
+                    <span class="team-color" style="background: #6CD3BF;"></span>
+                    <span class="driver-name">
+                        <span class="firstn">Lewis</span>
+                        <span class="lastn">Hamilton</span>
+                    </span>
+                    <span class="teamn">Mercedes</span>
+                    <span class="podiumright">
+                        <span class="points">121 PTS</span>
+                    </span>
+                </li>
+                <li class="ranking">
+                    <span class="podium-rank">5</span>
+                    <span class="team-color" style="background: #F91536;"></span>
+                    <span class="driver-name">
+                        <span class="firstn">Carlos</span>
+                        <span class="lastn">Sainz</span>
+                    </span>
+                    <span class="teamn">Ferrari</span>
+                    <span class="podiumright">
+                        <span class="points">83 PTS</span>
+                    </span>
+                </li>
+                <li class="ranking">
+                    <span class="podium-rank">6</span>
+                    <span class="team-color" style="background: #6CD3BF;"></span>
+                    <span class="driver-name">
+                        <span class="firstn">George</span>
+                        <span class="lastn">Russell</span>
+                    </span>
+                    <span class="teamn">Mercedes</span>
+                    <span class="podiumright">
+                        <span class="points">82 PTS</span>
+                    </span>
+                </li>
+                <li class="ranking">
+                    <span class="podium-rank">7</span>
+                    <span class="team-color" style="background: #F91536;"></span>
+                    <span class="driver-name">
+                        <span class="firstn">Charles</span>
+                        <span class="lastn">Leclerc</span>
+                    </span>
+                    <span class="teamn">Ferrari</span>
+                    <span class="podiumright">
+                        <span class="points">74 PTS</span>
+                    </span>
+                </li>
+                <li class="ranking">
+                    <span class="podium-rank">8</span>
+                    <span class="team-color" style="background: #358C75;"></span>
+                    <span class="driver-name">
+                        <span class="firstn">Lance</span>
+                        <span class="lastn">Stroll</span>
+                    </span>
+                    <span class="teamn">Aston Martin</span>
+                    <span class="podiumright">
+                        <span class="points">44 PTS</span>
+                    </span>
+                </li>
+                <li class="ranking">
+                    <span class="podium-rank">9</span>
+                    <span class="team-color" style="background: #F58020;"></span>
+                    <span class="driver-name">
+                        <span class="firstn">Lando</span>
+                        <span class="lastn">Norris</span>
+                    </span>
+                    <span class="teamn">McLaren</span>
+                    <span class="podiumright">
+                        <span class="points">42 PTS</span>
+                    </span>
+                </li>
+                <li class="ranking">
+                    <span class="podium-rank">10</span>
+                    <span class="team-color" style="background: #2293D1;"></span>
+                    <span class="driver-name">
+                        <span class="firstn">Esteban</span>
+                        <span class="lastn">Ocon</span>
+                    </span>
+                    <span class="teamn">Alpine</span>
+                    <span class="podiumright">
+                        <span class="points">31 PTS</span>
+                    </span>
+                </li>
+
+                <a href="" class="btn">VIEW FULL STANDINGS</a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="f1-partners">
+        <div class="spon">
+            <div class="colm">
+                <div class="row">
+                    <span class="logo">
+                        <img src="61fc02163cf0e70004222072 (2).png" alt="">
+                    </span>
+                    <span class="ourpartners">Our partners</span>
+
+
+                </div>
+                <div class="partnerlogos">
+                    <ul class="coloum1">
+                        <li class="Rolex">
+                            <a href="https://www.rolex.com" target="_blank">
+                                <img src="rolex.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="pirelli">
+                            <a href="https://www.pirelli.com" target="_blank">
+                                <img src="pirelli.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="Aramco">
+                            <a href="https://www.aramco.com/" target="_blank">
+                                <img src="aramco.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="Heineken">
+                            <a href=" https://www.heineken.com/" target="_blank">
+                                <img src="Heineken - Outlined.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="DHL">
+                            <a href="
+                            https://www.dhl.com/" target="_blank">
+                                <img src="dhl.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="Qatar Airways">
+                            <a href="qatarairways.com" target="_blank">
+                                <img src="qatar.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="AWS">
+                            <a href="aws.amazon.com" target="_blank">
+                                <img src="AWS GLOBAL.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="Crypto">
+                            <a href="
+                            https://crypto.com/" target="_blank">
+                                <img src="crypto.com.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="MSC">
+                            <a href="msc.com" target="_blank">
+                                <img src="msc.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="Salesforce">
+                            <a href="
+                            https://www.salesforce.com/in/" target="_blank">
+                                <img src="salesforce.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="coloum2">
+                        <li class="paramount">
+                            <a href="
+                            https://www.paramount.com/" target="_blank">
+                                <img src="Paramount+.png" alt="">
+                            </a>
+                        </li>
+                        <li class="lenovo">
+                            <a href="
+                            https://www.lenovo.com/in/en/" target="_blank">
+                                <img src="lenovo.avif" alt="">
+                            </a>
+
+                        </li>
+                        <li class="Ferrari">
+                            <a href="
+                            https://www.ferrari.com/" target="_blank">
+                                <img src="ferrari-trento.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="liqui-moly">
+                            <a href="
+                            https://www.liqui-moly.com/" target="_blank">
+                                <img src="liqui-moly.avif" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="coloum3">
+                        <li class="workday">
+                            <a href="workday.com" target="_blank">
+                                <img src="Workday.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="alphaturi">
+                            <a href="
+                            https://scuderia.alphatauri.com/en/" target="_blank">
+                                <img src="AlphaTauri.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="BBS">
+                            <a href="
+                            https://bbs-usa.com/" target="_blank">
+                                <img src="BBS.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="TATA">
+                            <a href="tatamotors.com" target="_blank">
+                                <img src="TATA.avif" alt="">
+                            </a>
+                        </li>
+                        <li class="puma">
+                            <a href="
+                            https://in.puma.com/" target="_blank">
+                                <img src="puma.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Lastcoloum-1">
+                    <div class="lastcoloum">
+                        <div class="latest-news">
+                            <ul class="latest-newssub">
+                                <li>Latest News</li>
+                                <li>What is F1?</li>
+                                <li>Video</li>
+                                <li>Drives</li>
+                                <li>Teams</li>
+                                <li>Schedule</li>
+                            </ul>
+                        </div>
+
+                        <div class="standings">
+                            <ul class="standings-sub">
+                                <li>2023 SEASON</li>
+                                <li>DRIVERS STANDINGS</li>
+                                <li>CONSTRUCTOR STANDINGS</li>
+                                <li>ARCHIVE 1950-2023</li>
+                                <li>F1 AWARDS</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="GAMING">
+                            <ul class="GAMING-SUB">
+                                <li>ESPORTS</li>
+                                <li>FANTASY</li>
+                                <li>F1 23</li>
+                                <li>F1 MANAGER 23</li>
+                                <li>F1 PLAY</li>
+                                <li>F1 MOBILE RACING</li>
+                            </ul>
+                        </div>
+
+                        <div class="LIVE-TIMING">
+                            <ul class="LIVE-sub">
+                                <li>LIVE TIMNG</li>
+                            </ul>
+                        </div>
+
+                        <div class="TICKETS">
+                            <ul class="TICKETS-sub">
+                                <li>F1 Experinces</li>
+                                <li>Store</li>
+                                <li>Paddock Club</li>
+                                <li>F1 TV</li>
+                                <li>F1 Authentics</li>
+                            </ul>
+                        </div>
+
+                        <div class="RULES">
+                            <ul class="RULES-sub">
+                                <li>RULES & REGULATIONS</li>
+
+                        </div>
+                    </div>
+                    <div class="nextrace">
+                        <div class="nextrace-sub">
+                            <p class="next">ROUND 12 - UP NEXT IN HUNGARY <img src="output-onlinepngtools copy 2.png"
+                                    alt=""></p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-sub">
+                            <hr class="bottom-line">
+                            <div class="row-bottom">
+                                <div class="logo-bottom">
+                                    <a href="">
+                                        <img src="61fc02163cf0e70004222072 (2).png" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-bottom">
+                                    <p class="text-sub">© 2003-2023 Formula One World Championship Limited</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="aryan.js"></script>
+</body>
+
+</html>
