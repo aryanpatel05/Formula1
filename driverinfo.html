@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 OFFICIAL | FORMULA1.com</title>
+    <link rel="stylesheet" href="aryan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Lobster&family=Russo+One&family=Tektur&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Lobster&family=Oswald:wght@200&family=Russo+One&family=Tektur&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onload="initClock()">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="61fc02163cf0e70004222072 (2).png" alt="F1.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#" class="nav-upper">HOME</a></li>
+            <li class="item"><a href="#" class="nav-upper">TEAM</a></li>
+            <li class="item"><a href="#" class="nav-upper">SCHEDULE</a></li>
+            <li class="item"><a href="#" class="nav-upper" id="driver-main-menu">DRIVER</a>
+                <div class="nav-secondary" style="display: none;" id="nav-secondary">
+                    <div class="ns-wrapper">
+                        <div class="navwidth">
+                            <div class="nav-contents">
+                                <div class="nav-header">
+                                    <a class="FRAME">HALL OF FRAME</a>
+                                    <!-- <a href=""></a> -->
+                                </div>
+                                <div class="nav-list drivers" id="driver-submenu">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </li>
+            <li class="item"><a href="https://f1tv.formula1.com/" target="_blank" class="nav-upper">F1 TV</a></li>
+            <li class="item"><a href="#" class="nav-upper">STORE</a></li>
+            <li class="item"><a href="#" class="nav-upper">CRASH</a></li>
+            <li class="item"><a href="#" class="nav-upper">SIGN IN</a></li>
+
+        </ul>
+
+
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>,
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <div class="driver-info-cont">
+        <article>
+            <div class="driver-info-cont-1">
+                <header class="driver-info-full">
+                    <section class="player-profile">
+                        <div class="player-profile-sub">
+                            <figure class="player-profile-sub-1">
+                                <div class="player-profile-photo"></div>
+
+                                <div class="player-full-image-cont">
+                                    <img src="drivers-info/1677069646195.avif" alt="">
+                                </div>
+
+
+                            </figure>
+                        </div>
+
+                        <figcaption class="driver-photo-details">
+                            <div class="driver-photo-details-main-name">
+                                <span class="driver-photo-details-main-name-1">1</span>
+                                <span class="driver-photo-details-main-name-flag">
+                                    <img src="drivers-info/Netherlands.webp" alt="">
+                                </span>
+                            </div>
+                            <h1 class="driver-name">
+                                Max Verstappen
+
+                            </h1>
+
+                        </figcaption>
+                    </section>
+
+                    <section class="driver-section-2">
+                        <div class="driver-section-2-sub-1">
+                            <div class="driver-section-first-upper">
+                                <section class="extra-info">
+                                    <div class="brand-logo">
+                                        <img src="drivers-info/verstappen.avif" alt="">
+                                    </div>
+                                    <div class="quick-lines">
+                                        <p class="quick-lines-sub">
+                                            <a href="https://f1store.formula1.com/en/max-verstappen/a-2395779425+z-976213-745545882"
+                                                target="_self" class=" text-link">Official merchandise</a>
+                                        </p>
+                                        <p class="quick-lines-sub">
+                                            <a href="https://www.f1authentics.com/f1-memorabilia-shop/by-driver/max-verstappen/?utm_source=f1&amp;utm_medium=website&amp;utm_campaign=referral_link"
+                                                target="_blank" class=" text-link">Official memorabilia</a>
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                            <table class="driver-section-2-table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="stat-key">
+
+                                            <span class="text">Team</span>
+
+                                        </th>
+                                        <td class="stat-value">Red Bull Racing</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="stat-key">
+
+                                            <span class="text">Country</span>
+
+                                        </th>
+                                        <td class="stat-value">Netherlands</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="stat-key">
+
+                                            <span class="text">Podiums</span>
+
+                                        </th>
+                                        <td class="stat-value">88</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="stat-key">
+
+                                            <span class="text">Points</span>
+
+                                        </th>
+                                        <td class="stat-value">2292.5</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="stat-key">
+
+                                            <span class="text">Grands Prix entered</span>
+
+                                        </th>
+                                        <td class="stat-value">175</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="stat-key">
+
+                                            <span class="text">World Championships</span>
+
+                                        </th>
+                                        <td class="stat-value">2</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="stat-key">
+
+                                            <span class="text">Highest race finish</span>
+
+                                        </th>
+                                        <td class="stat-value">1 (x44)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="stat-key">
+
+                                            <span class="text">Highest grid position</span>
+
+                                        </th>
+                                        <td class="stat-value">1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="stat-key">
+
+                                            <span class="text">Date of birth</span>
+
+                                        </th>
+                                        <td class="stat-value">30/09/1997</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="stat-key">
+
+                                            <span class="text">Place of birth</span>
+
+                                        </th>
+                                        <td class="stat-value">Hasselt, Belgium</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="player-biography">
+                        <div class="text-parbase">
+                            <h3 class="bio">Biography</h3>
+                        </div>
+                        <div class="text-parbase">
+
+
+
+
+                            <p class="text-base-1">He's Max by name, and max by nature.</p>
+                            <p class="text-base-1">Arriving as Formula 1's youngest ever competitor at just 17 years
+                                old, Verstappen pushed
+                                his car, his rivals and the sport's record books to the limit. The baby-faced Dutchman
+                                with the heart of a lion took the Toro Rosso - and then the Red Bull - by the horns with
+                                his instinctive racing style.</p>
+                            <p class="text-base-1">F's youngest points scorer soon became its youngest race winner - at
+                                the age of 18 years
+                                and 228 days - with an opportunistic but controlled drive on debut for Red Bull in
+                                Barcelona 2016. A true wheel-to-wheel racer, another stunning drive in Brazil from the
+                                back of the pack to the podium on a treacherous wet track kept the plaudits coming.</p>
+                            <p class="text-base-1">Verstappen's no-holds-barred attitude and hard defending have
+                                sometimes landed him in hot
+                                water with his peers and paymasters. But the mistakes that initially marred his
+                                potential have given way to maturity, while the bravado and energy that make him a
+                                blockbuster talent have remained - and the victories have kept on coming.</p>
+                            <p class="text-base-1">They culminated in his first F1 drivers' crown after that already
+                                legendary, final-round
+                                showdown with Lewis Hamilton in 2021. And he followed that up with a powerhouse title
+                                defence in 2022, winning a record 15 races across the season.</p>
+                            <p class="text-base-1">The son of former F1 driver Jos Verstappen and super-quick karting
+                                Mum Sophie Kumpen,
+                                racing runs through his genes. Despite moving out of Dads house to live in Monaco,
+                                Verstappen remains close to his family, and though he's not afraid to speak his mind, he
+                                can still be surprisingly shy.</p>
+                            <p class="text-base-1">Having become the Netherlands' first world champion aged just 24, the
+                                expectations for
+                                the next generation's leading light are sky high - but with Verstappen there's a feeling
+                                that the sky's the limit.</p>
+
+
+
+                        </div>
+                    </section>
+
+                    <section class="player-homescreen-photos">
+
+                        <div class="slider-container">
+                            <div class="slider">
+                                <img src="drivers-info/1647010573317.avif" alt="Image 1">
+                                <img src="drivers-info/1647525460117.avif" alt="Image 2">
+                                <img src="drivers-info/1647107069610.avif" alt="Image 3">
+                                <img src="drivers-info/1647103996509.avif" alt="Image 4">
+                                <img src="drivers-info/1647090795238.avif" alt="Image 5">
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <div class="gallery-text">
+                                <div class="span-class">
+                                    <span class="current-image-number">1</span>
+                                    /
+                                    <span class="total-image-number">6</span>
+                                </div>
+                                <div class="span-class">
+                                    <span class="current-image-number">2</span>
+                                    /
+                                    <span class="total-image-number">6</span>
+                                </div>
+                                <div class="span-class">
+                                    <span class="current-image-number">3</span>
+                                    /
+                                    <span class="total-image-number">6</span>
+                                </div>
+                                <div class="span-class">
+                                    <span class="current-image-number">4</span>
+                                    /
+                                    <span class="total-image-number">6</span>
+                                </div>
+                                <div class="span-class">
+                                    <span class="current-image-number">5</span>
+                                    /
+                                    <span class="total-image-number">6</span>
+                                </div>
+                                <div class="span-class">
+                                    <span class="current-image-number">6</span>
+                                    /
+                                    <span class="total-image-number">6</span>
+                                </div>
+                            </div>
+                            <div class="gallery-text-2">
+                                <p class="gallery-description hidden">BAHRAIN, BAHRAIN - MARCH 17: Max
+                                    Verstappen of the Netherlands and Oracle Red Bull Racing looks on in the Paddock
+                                    during previews ahead of the F1 Grand Prix of Bahrain at Bahrain International
+                                    Circuit on March 17, 2022 in Bahrain, Bahrain. (Photo by Clive Mason/Getty
+                                    Images) © 2022 Getty Images</p>
+
+                                <p class="gallery-description hidden">BAHRAIN, BAHRAIN - MARCH 12: Max Verstappen of the
+                                    Netherlands driving the (1) Oracle Red Bull Racing RB18 on track during Day Three of
+                                    F1 Testing at Bahrain International Circuit on March 12, 2022 in Bahrain, Bahrain.
+                                    (Photo by Mark Thompson/Getty Images) © 2022 Getty Images</p>
+
+                                <p class="gallery-description hidden">BAHRAIN, BAHRAIN - MARCH 12: Max Verstappen of the
+                                    Netherlands and Oracle Red Bull Racing prepares to drive in the garage during Day
+                                    Three of F1 Testing at Bahrain International Circuit on March 12, 2022 in Bahrain,
+                                    Bahrain. (Photo by Mark Thompson/Getty Images) © 2022 Getty Images</p>
+
+                                <p class="gallery-description hidden">BAHRAIN, BAHRAIN - MARCH 12: Max Verstappen of the
+                                    Netherlands driving the (1) Oracle Red Bull Racing RB18 on track during Day Three of
+                                    F1 Testing at Bahrain International Circuit on March 12, 2022 in Bahrain, Bahrain.
+                                    (Photo by Dan Istitene - Formula 1/Formula 1 via Getty Images) © 2022 Formula One
+                                    World Championship Limited</p>
+
+                                <p class="gallery-description hidden">BAHRAIN, BAHRAIN - MARCH 12: Max Verstappen of the
+                                    Netherlands and Oracle Red Bull Racing talks with race engineer Gianpiero Lambiase
+                                    in the garage during Day Three of F1 Testing at Bahrain International Circuit on
+                                    March 12, 2022 in Bahrain, Bahrain. (Photo by Mark Thompson/Getty Images) © 2022
+                                    Getty Images</p>
+
+                                <p class="gallery-description hidden">BAHRAIN, BAHRAIN - MARCH 11: Max Verstappen of the
+                                    Netherlands and Oracle Red Bull Racing prepares to drive in the garage during Day
+                                    Two of F1 Testing at Bahrain International Circuit on March 11, 2022 in Bahrain,
+                                    Bahrain. (Photo by Mark Thompson/Getty Images) © 2022 Getty Images</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-small-pics">
+                            <div class="gallery-small-pics-1">
+                                <img src="drivers-info/wallpaperflare.com_wallpaper.jpg" alt="Image 1">
+                                <img src="drivers-info/wallpaperflare.com_wallpaper (1).jpg" alt="Image 2">
+                                <img src="drivers-info/wallpaperflare.com_wallpaper (2).jpg" alt="Image 3">
+                                <img src="drivers-info/wallpaperflare.com_wallpaper (3).jpg" alt="Image 4">
+                                <img src="drivers-info/wallpaperflare.com_wallpaper-1 copy.jpg" alt="Image 5">
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                </header>
+            </div>
+        </article>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <footer id="default-f1-partners"></footer>
+    <script src="aryan.js"></script>
+
+</body>
+
+</html>
