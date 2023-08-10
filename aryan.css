@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;1,400;1,700&family=Zen+Dots&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -48,6 +49,8 @@
     list-style: none;
     font-size: 1rem;
     font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 #navbar ul li a {
