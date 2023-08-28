@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 OFFICIAL | FORMULA1.com</title>
+    <link rel="stylesheet" href="aryan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Lobster&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Lobster&family=Russo+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="initClock()">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="61fc02163cf0e70004222072 (2).png" alt="F1.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#" class="nav-upper">HOME</a></li>
+            <li class="item"><a href="#" class="nav-upper">TEAM</a></li>
+            <li class="item"><a href="#" class="nav-upper">SCHEDULE</a></li>
+            <li class="item"><a href="#" class="nav-upper" id="driver-main-menu">DRIVER</a>
+                <div class="nav-secondary" style="display: none;" id="nav-secondary">
+                    <div class="ns-wrapper">
+                        <div class="navwidth">
+                            <div class="nav-contents">
+                                <div class="nav-header">
+                                    <a class="FRAME">HALL OF FRAME</a>
+                                    <!-- <a href=""></a> -->
+                                </div>
+                                <div class="nav-list drivers" id="driver-submenu">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </li>
+            <li class="item"><a href="https://f1tv.formula1.com/" target="_blank" class="nav-upper">F1 TV</a></li>
+            <li class="item"><a href="#" class="nav-upper">STORE</a></li>
+            <li class="item"><a href="#" class="nav-upper">CRASH</a></li>
+            <li class="item"><a href="#" class="nav-upper">SIGN IN</a></li>
+
+        </ul>
+
+
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>,
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <div class="Schedule-main">
+        <div class="Schedule-sub">
+            <div class="Schedule-sub-2">
+                <div class="Schedule-text">
+                    <h1 class="no-margin">
+                        <span class="text-wrapper">
+                            <span class="letters">F1 Drivers 2023</span>
+                        </span>
+                    </h1>
+                    <!-- <p class="f1-uppercase">2023 FIA FORMULA ONE WORLD CHAMPIONSHIP™ RACE CALENDAR</p> -->
+                </div>
+                <!-- <div class="Schedule-Next-R">
+                    <div class="Schedule-Next-sub">
+                        <a href="">
+                            <div class="icon">
+                                <img src="maps/icons8-down-64 copy 2.png" alt="">
+                            </div>
+                            <div class="track">
+                                <div class="upper-1">
+                                    <span class="round-pretext">NEXT-</span>
+                                    <span class="next-round">ROUND 12</span>
+                                </div>
+                                <div class="down">
+                                    <span class="track-name">Hungary</span>
+                                    <span class="track-year">2023</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="driver-cont-1">
+        <div class="driver-cont-sub">
+            <div class="driver-cont-sub-1">
+                <p class="drivers-cont-sub-2">
+                    Check out this season's official F1 line-up. Full breakdown of drivers, points and current
+                    positions. Follow your favourite F1 drivers on and off the track.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="driver-full-list">
+        <div class="driver-full-list-sub">
+            <div class="driver-full-list-sub-1">
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">1</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">281</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #3671C6;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Max</span>
+                                    <span class="drivers-listing-info-surname">Verstappen</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (34).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Red Bull Racing</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image.avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (1).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">2</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">171</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #3671C6;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Sergio</span>
+                                    <span class="drivers-listing-info-surname">Perez</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (23).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Red Bull Racing</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (2).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (44).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">3</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">139</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #358C75;">
+                                    <span class=" drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Fernando</span>
+                                    <span class="drivers-listing-info-surname">Alonso</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (24).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Aston Martin</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (3).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (45).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">4</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">133</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #6CD3BF;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Lewis</span>
+                                    <span class="drivers-listing-info-surname">Hamilton</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (25).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Mercedes</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (4).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (46).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">5</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">90</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #6CD3BF;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">George</span>
+                                    <span class="drivers-listing-info-surname">Russell</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (26).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Mercedes</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (5).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (47).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">6</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">87</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #F91536;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Carlos</span>
+                                    <span class="drivers-listing-info-surname">Sainz</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (27).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Ferrari</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (6).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (48).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">7</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">80</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #F91536;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Charles</span>
+                                    <span class="drivers-listing-info-surname">Leclerc</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (28).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Ferrari</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (8).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (49).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">8</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">60</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #F58020;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Lando</span>
+                                    <span class="drivers-listing-info-surname">Norris</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (30).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">McLaren</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (9).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (50).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">9</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">45</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #358C75;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Lance</span>
+                                    <span class="drivers-listing-info-surname">Stroll</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (31).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Aston Martin</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (10).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (51).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">10</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">31</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #2293D1;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Esteban</span>
+                                    <span class="drivers-listing-info-surname">Ocon</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (32).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Alpine</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (11).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (52).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">11</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">27</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #F58020;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Oscar</span>
+                                    <span class="drivers-listing-info-surname">Piastri</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (33).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">McLaren</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (12).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (53).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">12</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">16</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #2293D1;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Pierre</span>
+                                    <span class="drivers-listing-info-surname">Gasly</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (34).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Alpine</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (13).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (54).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">13</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">11</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #37BEDD;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Alexander</span>
+                                    <span class="drivers-listing-info-surname">Albon</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (35).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Williams</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (14).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (55).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">14</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">9</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #B6BABD;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Nico</span>
+                                    <span class="drivers-listing-info-surname">Hulkenberg</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (36).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Haas F1 Team</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (15).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (56).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">15</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">5</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #C92D4B;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Valtteri</span>
+                                    <span class="drivers-listing-info-surname">Bottas</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (37).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Alfa Romeo</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (16).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (57).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">16</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">4</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #C92D4B;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Zhou</span>
+                                    <span class="drivers-listing-info-surname">Guanyu</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (38).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Alfa Romeo</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (17).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (58).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">17</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">2</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #5E8FAA;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Yuki</span>
+                                    <span class="drivers-listing-info-surname">Tsunoda</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (39).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">AlfaTauri</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (18).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (59).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">18</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">2</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #B6BABD;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Kevin</span>
+                                    <span class="drivers-listing-info-surname">Magnussen</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (40).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Haas F1 Team</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (19).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (60).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">19</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">0</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #37BEDD;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Logan</span>
+                                    <span class="drivers-listing-info-surname">Sargeant</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (41).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">Williams</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (20).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (61).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">20</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">0</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #5E8FAA;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Nyck</span>
+                                    <span class="drivers-listing-info-surname">De Vries</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (42).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">AlfaTauri</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (21).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (62).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+                <a href="">
+                    <fieldset class="drivers-card">
+                        <legend class="drivers-card-1">
+                            <!-- ROUND 14 -->
+                            <span class="driver-status"></span>
+                        </legend>
+
+                        <div class="drivers-listing-standing">
+                            <div class="drivers-listing-rank">21</div>
+                            <div class="drivers-listing-rank-points">
+                                <div class="drivers-listing-rank-points-up">0</div>
+                                <div class="drivers-listing-rank-points-down">PTS</div>
+                            </div>
+                        </div>
+
+                        <div class="drivers-listing-info">
+                            <div class="drivers-listing-info-sub">
+                                <div class="drivers-listing-info-sub-1" style="border-color: #5E8FAA;">
+                                    <span class="drivers-listing-info-color"></span>
+                                    <span class="drivers-listing-info-name">Daniel</span>
+                                    <span class="drivers-listing-info-surname">Ricciardo</span>
+                                </div>
+                                <div class="drivers-listing-countryflag">
+                                    <picture class="listing-countryflag">
+                                        <img src="drivers/image (43).avif" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="drivers-listing-team-name">AlfaTauri</p>
+                        <div class="drivers-listing-driver-pic">
+                            <picture class="drivers-listing-driver-pic-main">
+                                <img src="drivers/image (22).avif" alt="">
+                            </picture>
+                            <picture class="drivers-listing-driver-pic-num">
+                                <img src="drivers/image (63).avif" alt="">
+                            </picture>
+                        </div>
+                    </fieldset>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <footer id="default-f1-partners"></footer>
+    <script src="aryan.js"></script>
+
+</body>
+
+</html>
