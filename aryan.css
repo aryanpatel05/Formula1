@@ -1546,3 +1546,46 @@ p.text-base-1 {
     /* border: 1px solid black; */
     border-radius: 5px;
 }
+/* ------------------------------------------------------------------------------------------------------------- */
+/* video */
+.video-main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+fieldset.video-card {
+    border-width: 2px 2px 10px 10px;
+    border-top-style: solid;
+    border-color: black black rgb(225, 6, 0) rgb(225, 6, 0);
+    border-right-style: solid;
+    width: 100%;
+    text-align: left;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    margin-top: 40px;
+    border-top-right-radius: 10px;
+}
+legend.video-card-1 {
+    color: red;
+    padding-right: 10px;
+}
+video.back-video {
+    display: flex;
+    flex-wrap: wrap;
+}
+p.video-heading-2 {
+    border-bottom: 10px solid black;
+    padding-top: 5px;
+}
+
+p.video-heading-1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Russo One';
+    letter-spacing: 1px;
+}
+
+.video-first {
+    padding-top: 35px;
+}
