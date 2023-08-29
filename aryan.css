@@ -45,6 +45,11 @@
 #navbar ul li {
     list-style: none;
     font-size: 1rem;
+    list-style: none;
+    font-size: 1rem;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 #navbar ul li a {
@@ -227,7 +232,7 @@ a:hover {
 }
 
 .back-video {
-    position: absolute;
+    /* position: absolute; */
     right: 0px;
     bottom: 0px;
     z-index: 1;
@@ -1571,8 +1576,8 @@ legend.video-card-1 {
     padding-right: 10px;
 }
 video.back-video {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 p.video-heading-2 {
     border-bottom: 10px solid black;
@@ -1588,4 +1593,41 @@ p.video-heading-1 {
 
 .video-first {
     padding-top: 35px;
+}
+
+video.back-video.video-1 {
+    min-height: unset !important;
+}
+
+section#home-1 {
+    justify-content: center;
+    display: flex;
+    /* height: 100vh; */
+    background: 0% 0% / cover no-repeat black;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* top: 0px; */
+}
+
+.small-videos {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* gap: 30px; */
+    width: 100%;
+    max-width: 1300px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.small-videos-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+video.small-v {
+    width: 100%;
 }
