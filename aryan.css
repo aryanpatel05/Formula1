@@ -1597,6 +1597,7 @@ p.video-heading-1 {
 
 video.back-video.video-1 {
     min-height: unset !important;
+    position: inherit !important;
 }
 
 section#home-1 {
