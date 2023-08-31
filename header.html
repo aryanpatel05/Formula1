@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aryan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Lobster&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Lobster&family=Russo+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="initClock()">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="61fc02163cf0e70004222072 (2).png" alt="F1.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#" class="nav-upper">HOME</a></li>
+            <li class="item"><a href="./teams.html" class="nav-upper">TEAM</a></li>
+            <li class="item"><a href="./schedule.html" class="nav-upper">SCHEDULE</a></li>
+            <li class="item"><a href="#" class="nav-upper" id="driver-main-menu">DRIVER</a>
+                <div class="nav-secondary" style="display: none;" id="nav-secondary">
+                    <div class="ns-wrapper">
+                        <div class="navwidth">
+                            <div class="nav-contents">
+                                <div class="nav-header">
+                                    <a class="FRAME">HALL OF FRAME</a>
+                                    <!-- <a href=""></a> -->
+                                </div>
+                                <div class="nav-list drivers" id="driver-submenu">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </li>
+            <li class="item"><a href="https://f1tv.formula1.com/" target="_blank" class="nav-upper">F1 TV</a></li>
+            <li class="item"><a href="#" class="nav-upper">STORE</a></li>
+            <li class="item"><a href="#" class="nav-upper">CRASH</a></li>
+            <li class="item"><a href="#" class="nav-upper">SIGN IN</a></li>
+
+        </ul>
+
+
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>,
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+
+
+    </nav>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <footer id="default-f1-partners"></footer>
+    <script src="aryan.js"></script>
+
+
+</body>
+
+</html>
