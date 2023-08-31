@@ -155,6 +155,35 @@ const file_text = async (filename) => {
 
 file_text('f1partners.html').then((result) => document.getElementById("default-f1-partners").innerHTML= result)
 
+
+const slider = document.querySelector('.slider');
+const images = document.querySelectorAll('.slider img');
+
+let slideIndex = 0;
+
+function nextSlide() {
+    slideIndex = (slideIndex + 1) % images.length;
+    updateSliderPosition();
+}
+
+function updateSliderPosition() {
+    const offset = slideIndex * -100;
+    slider.style.transform = `translateX(${offset}%)`;
+}
+
+// Change slide every 3 seconds (adjust the interval as needed)
+const slideInterval = setInterval(nextSlide, 3000);
+
+// Pause auto-sliding when the user hovers over the slider
+slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+
+// Resume auto-sliding when the user moves the mouse out of the slider
+slider.addEventListener('mouseleave', () => {
+    slideInterval = setInterval(nextSlide, 3000);
+});
+
+  
+
 // const slider = document.querySelector('.slider');
 // const images = document.querySelectorAll('.slider img');
 
@@ -211,3 +240,4 @@ $( document ).ready(function() {
     
       
 });
+
