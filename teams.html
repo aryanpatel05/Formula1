@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aryan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Lobster&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Lobster&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+
+<body onload="initClock()">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="61fc02163cf0e70004222072 (2).png" alt="F1.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="./index.html" class="nav-upper">HOME</a></li>
+            <li class="item"><a href="./teams.html" class="nav-upper">TEAM</a></li>
+            <li class="item"><a href="./schedule.html" class="nav-upper">SCHEDULE</a></li>
+            <li class="item"><a href="./drivers.html#" class="nav-upper" id="driver-main-menu">DRIVER</a>
+                <div class="nav-secondary" style="display: none;" id="nav-secondary">
+                    <div class="ns-wrapper">
+                        <div class="navwidth">
+                            <div class="nav-contents">
+                                <div class="nav-header">
+                                    <a class="FRAME">HALL OF FRAME</a>
+                                    <!-- <a href=""></a> -->
+                                </div>
+                                <div class="nav-list drivers" id="driver-submenu">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </li>
+            <li class="item"><a href="https://f1tv.formula1.com/" target="_blank" class="nav-upper">F1 TV</a></li>
+            <li class="item"><a href="#" class="nav-upper">STORE</a></li>
+            <li class="item"><a href="#" class="nav-upper">CRASH</a></li>
+            <li class="item"><a href="#" class="nav-upper">SIGN IN</a></li>
+
+        </ul>
+
+
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>,
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+
+
+    </nav>
+    <div class="Schedule-main">
+        <div class="Schedule-sub">
+            <div class="Schedule-sub-2">
+                <div class="Schedule-text">
+                    <h1 class="no-margin">
+                        <span class="text-wrapper">
+                            <span class="letters">F1 Teams 2023</span>
+                        </span>
+                    </h1>
+                    <!-- <p class="f1-uppercase">2023 FIA FORMULA ONE WORLD CHAMPIONSHIP™ RACE CALENDAR</p> -->
+                </div>
+                <!-- <div class="Schedule-Next-R">
+                    <div class="Schedule-Next-sub">
+                        <a href="">
+                            <div class="icon">
+                                <img src="maps/icons8-down-64 copy 2.png" alt="">
+                            </div>
+                            <div class="track">
+                                <div class="upper-1">
+                                    <span class="round-pretext">NEXT-</span>
+                                    <span class="next-round">ROUND 12</span>
+                                </div>
+                                <div class="down">
+                                    <span class="track-name">Hungary</span>
+                                    <span class="track-year">2023</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="driver-cont-1">
+        <div class="driver-cont-sub">
+            <div class="driver-cont-sub-1">
+                <p class="drivers-cont-sub-2">
+                    Discover everything you need to know about this year's Formula 1 teams - drivers, podium finishes,
+                    points earned and championship titles.
+            </div>
+        </div>
+    </div>
+
+    <div class="teams-main-container">
+        <div class="teams-main-container-1">
+            <div class="teams-row">
+                <div class="teams-sub-cont-1">
+                    <a href="#">
+                        <fieldset class="teams-listing-wrapper" onMouseOver="this.style.borderColor='#3671C6'"
+                        onMouseOut="this.style.borderColor='black'">
+                            <div class="teams-listing-items">
+                                <div class="teams-listing-standing">
+                                    <div class="teams-listing-rank">1</div>
+                                    <div class="teams-listing-points">
+                                        <div class="teams-listing-upper">503</div>
+                                        <div class="teams-listing-lower">Pts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-listing-info">
+                                <div class="teams-listing-tname">
+                                    <span class="teams-listing-tcolor"  style="background-color: #3671C6;"></span>
+                                    <span class="teams-listing-t-name">Red Bull Racing</span>
+                                </div>
+                                <div class="teams-listing-tlogo">
+                                    <picture class="teams-car-logo">
+                                        <img src="teams-img/image (3).avif  " alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="teams-listing-tdrivers">
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Sergio</span>
+                                        <span class="teams-listing-fdriver-last">Perze</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (1).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Max</span>
+                                        <span class="teams-listing-fdriver-last">Verstappen</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (2).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="teams-listing-carfullimg">
+                                <picture class="teams-listing-carfullimg-1">
+                                    <img src="teams-img/image.avif" alt="">
+                                </picture>
+                            </div>
+                        </fieldset>
+                    </a>
+                    <a href="#">
+                        <fieldset class="teams-listing-wrapper" onMouseOver="this.style.borderColor='#6CD3BF'"
+                        onMouseOut="this.style.borderColor='black'">
+                            <div class="teams-listing-items">
+                                <div class="teams-listing-standing">
+                                    <div class="teams-listing-rank">2</div>
+                                    <div class="teams-listing-points">
+                                        <div class="teams-listing-upper">247</div>
+                                        <div class="teams-listing-lower">Pts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-listing-info">
+                                <div class="teams-listing-tname">
+                                    <span class="teams-listing-tcolor" style="background-color: #6CD3BF;"></span>
+                                    <span class="teams-listing-t-name">Mercedes</span>
+                                </div>
+                                <div class="teams-listing-tlogo">
+                                    <picture class="teams-car-logo">
+                                        <img src="teams-img/image (8).avif  " alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="teams-listing-tdrivers">
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">George</span>
+                                        <span class="teams-listing-fdriver-last">RUSSELL</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (5).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Lewis</span>
+                                        <span class="teams-listing-fdriver-last">HAMILTON</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (6).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="teams-listing-carfullimg">
+                                <picture class="teams-listing-carfullimg-1">
+                                    <img src="teams-img/image (7).avif" alt="">
+                                </picture>
+                            </div>
+                        </fieldset>
+                    </a>
+                    <a href="#">
+                        <fieldset class="teams-listing-wrapper" onMouseOver="this.style.borderColor='#358C75'"
+                        onMouseOut="this.style.borderColor='black'">
+                            <div class="teams-listing-items">
+                                <div class="teams-listing-standing">
+                                    <div class="teams-listing-rank">3</div>
+                                    <div class="teams-listing-points">
+                                        <div class="teams-listing-upper">196</div>
+                                        <div class="teams-listing-lower">Pts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-listing-info">
+                                <div class="teams-listing-tname">
+                                    <span class="teams-listing-tcolor" style="background-color: #358C75;"></span>
+                                    <span class="teams-listing-t-name">Aston Martin</span>
+                                </div>
+                                <div class="teams-listing-tlogo">
+                                    <picture class="teams-car-logo">
+                                        <img src="teams-img/image (9).avif  " alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="teams-listing-tdrivers">
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Lance</span>
+                                        <span class="teams-listing-fdriver-last">STROLL</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (10).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Fernamdo</span>
+                                        <span class="teams-listing-fdriver-last">ALONSO</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (11).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="teams-listing-carfullimg">
+                                <picture class="teams-listing-carfullimg-1">
+                                    <img src="teams-img/image (12).avif" alt="">
+                                </picture>
+                            </div>
+                        </fieldset>
+                    </a>
+                    <a href="#">
+                        <fieldset class="teams-listing-wrapper" onMouseOver="this.style.borderColor='#F91536'"
+                        onMouseOut="this.style.borderColor='black'">
+                            <div class="teams-listing-items">
+                                <div class="teams-listing-standing">
+                                    <div class="teams-listing-rank">4</div>
+                                    <div class="teams-listing-points">
+                                        <div class="teams-listing-upper">191</div>
+                                        <div class="teams-listing-lower">Pts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-listing-info">
+                                <div class="teams-listing-tname">
+                                    <span class="teams-listing-tcolor" style="background-color: #F91536;"></span>
+                                    <span class="teams-listing-t-name">Ferrari</span>
+                                </div>
+                                <div class="teams-listing-tlogo">
+                                    <picture class="teams-car-logo">
+                                        <img src="teams-img/image (13).avif  " alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="teams-listing-tdrivers">
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Carlos</span>
+                                        <span class="teams-listing-fdriver-last">SAINZ</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (14).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Charles</span>
+                                        <span class="teams-listing-fdriver-last">LECLERC</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (15).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="teams-listing-carfullimg">
+                                <picture class="teams-listing-carfullimg-1">
+                                    <img src="teams-img/image (16).avif" alt="">
+                                </picture>
+                            </div>
+                        </fieldset>
+                    </a>
+                    <a href="#">
+                        <fieldset class="teams-listing-wrapper" onMouseOver="this.style.borderColor='#F58020'"
+                        onMouseOut="this.style.borderColor='black'">
+                            <div class="teams-listing-items">
+                                <div class="teams-listing-standing">
+                                    <div class="teams-listing-rank">5</div>
+                                    <div class="teams-listing-points">
+                                        <div class="teams-listing-upper">103</div>
+                                        <div class="teams-listing-lower">Pts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-listing-info">
+                                <div class="teams-listing-tname">
+                                    <span class="teams-listing-tcolor" style="background-color:#F58020;"></span>
+                                    <span class="teams-listing-t-name">McLaren</span>
+                                </div>
+                                <div class="teams-listing-tlogo">
+                                    <picture class="teams-car-logo">
+                                        <img src="teams-img/image (17).avif  " alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="teams-listing-tdrivers">
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Lando</span>
+                                        <span class="teams-listing-fdriver-last">NORRIS</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (18).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Oscar</span>
+                                        <span class="teams-listing-fdriver-last">PIASTRI</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (19).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="teams-listing-carfullimg">
+                                <picture class="teams-listing-carfullimg-1">
+                                    <img src="teams-img/image (20).avif" alt="">
+                                </picture>
+                            </div>
+                        </fieldset>
+                    </a>
+                    <a href="#">
+                        <fieldset class="teams-listing-wrapper" onMouseOver="this.style.borderColor='#2293D1'"
+                        onMouseOut="this.style.borderColor='black'">
+                            <div class="teams-listing-items">
+                                <div class="teams-listing-standing">
+                                    <div class="teams-listing-rank">6</div>
+                                    <div class="teams-listing-points">
+                                        <div class="teams-listing-upper">57</div>
+                                        <div class="teams-listing-lower">Pts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-listing-info">
+                                <div class="teams-listing-tname">
+                                    <span class="teams-listing-tcolor" style="background-color: #2293D1;"></span>
+                                    <span class="teams-listing-t-name">Alpine</span>
+                                </div>
+                                <div class="teams-listing-tlogo">
+                                    <picture class="teams-car-logo">
+                                        <img src="teams-img/image (21).avif  " alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="teams-listing-tdrivers">
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Esteban</span>
+                                        <span class="teams-listing-fdriver-last">OCON</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (22).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Pierre</span>
+                                        <span class="teams-listing-fdriver-last">GASLY</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (23).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="teams-listing-carfullimg">
+                                <picture class="teams-listing-carfullimg-1">
+                                    <img src="teams-img/image (24).avif" alt="">
+                                </picture>
+                            </div>
+                        </fieldset>
+                    </a>
+                    <a href="#">
+                        <fieldset class="teams-listing-wrapper" onMouseOver="this.style.borderColor='#37BEDD'"
+                        onMouseOut="this.style.borderColor='black'">
+                            <div class="teams-listing-items">
+                                <div class="teams-listing-standing">
+                                    <div class="teams-listing-rank">7</div>
+                                    <div class="teams-listing-points">
+                                        <div class="teams-listing-upper">11</div>
+                                        <div class="teams-listing-lower">Pts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-listing-info">
+                                <div class="teams-listing-tname">
+                                    <span class="teams-listing-tcolor" style="background-color:#37BEDD;"></span>
+                                    <span class="teams-listing-t-name">Williams </span>
+                                </div>
+                                <div class="teams-listing-tlogo">
+                                    <picture class="teams-car-logo">
+                                        <img src="teams-img/image (25).avif  " alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="teams-listing-tdrivers">
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Alexander</span>
+                                        <span class="teams-listing-fdriver-last">AlBON</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (26).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Logan</span>
+                                        <span class="teams-listing-fdriver-last">SERGEANT</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (27).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="teams-listing-carfullimg">
+                                <picture class="teams-listing-carfullimg-1">
+                                    <img src="teams-img/image (28).avif" alt="">
+                                </picture>
+                            </div>
+                        </fieldset>
+                    </a>
+                    <a href="#">
+                        <fieldset class="teams-listing-wrapper" onMouseOver="this.style.borderColor='#B6BABD'"
+                        onMouseOut="this.style.borderColor='black'">
+                            <div class="teams-listing-items">
+                                <div class="teams-listing-standing">
+                                    <div class="teams-listing-rank">8</div>
+                                    <div class="teams-listing-points">
+                                        <div class="teams-listing-upper">11</div>
+                                        <div class="teams-listing-lower">Pts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-listing-info">
+                                <div class="teams-listing-tname">
+                                    <span class="teams-listing-tcolor" style="background-color: #B6BABD;"></span>
+                                    <span class="teams-listing-t-name">Haas F1 Team</span>
+                                </div>
+                                <div class="teams-listing-tlogo">
+                                    <picture class="teams-car-logo">
+                                        <img src="teams-img/image (29).avif  " alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="teams-listing-tdrivers">
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Nico</span>
+                                        <span class="teams-listing-fdriver-last">HULKENBERG</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (30).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Kevin</span>
+                                        <span class="teams-listing-fdriver-last">MAGNUSSEN</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (31).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="teams-listing-carfullimg">
+                                <picture class="teams-listing-carfullimg-1">
+                                    <img src="teams-img/image (32).avif" alt="">
+                                </picture>
+                            </div>
+                        </fieldset>
+                    </a>
+                    <a href="#">
+                        <fieldset class="teams-listing-wrapper" onMouseOver="this.style.borderColor='#C92D4B'"
+                        onMouseOut="this.style.borderColor='black'">
+                            <div class="teams-listing-items">
+                                <div class="teams-listing-standing">
+                                    <div class="teams-listing-rank">9</div>
+                                    <div class="teams-listing-points">
+                                        <div class="teams-listing-upper">9</div>
+                                        <div class="teams-listing-lower">Pts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-listing-info">
+                                <div class="teams-listing-tname">
+                                    <span class="teams-listing-tcolor" style="background-color: #C92D4B;"></span>
+                                    <span class="teams-listing-t-name">Alfa Romeo</span>
+                                </div>
+                                <div class="teams-listing-tlogo">
+                                    <picture class="teams-car-logo">
+                                        <img src="teams-img/image (33).avif  " alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="teams-listing-tdrivers">
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">ZHOU</span>
+                                        <span class="teams-listing-fdriver-last">Guanyu</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (34).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Valtteri</span>
+                                        <span class="teams-listing-fdriver-last">BOTTAS</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (35).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="teams-listing-carfullimg">
+                                <picture class="teams-listing-carfullimg-1">
+                                    <img src="teams-img/image (36).avif" alt="">
+                                </picture>
+                            </div>
+                        </fieldset>
+                    </a>
+                    <a href="#">
+                        <fieldset class="teams-listing-wrapper" onMouseOver="this.style.borderColor='#5E8FAA'"
+                        onMouseOut="this.style.borderColor='black'">
+                            <div class="teams-listing-items">
+                                <div class="teams-listing-standing">
+                                    <div class="teams-listing-rank">10</div>
+                                    <div class="teams-listing-points">
+                                        <div class="teams-listing-upper">3</div>
+                                        <div class="teams-listing-lower">Pts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-listing-info">
+                                <div class="teams-listing-tname">
+                                    <span class="teams-listing-tcolor" style="background-color: #5E8FAA;"></span>
+                                    <span class="teams-listing-t-name">AlphaTauri</span>
+                                </div>
+                                <div class="teams-listing-tlogo">
+                                    <picture class="teams-car-logo">
+                                        <img src="teams-img/image (37).avif  " alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="teams-listing-tdrivers">
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Daniel</span>
+                                        <span class="teams-listing-fdriver-last">RICCIARDO</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (38).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="teams-listing-fdriver">
+                                    <div class="teams-listing-fdriver-name">
+                                        <span class="teams-listing-fdriver-first">Yuki</span>
+                                        <span class="teams-listing-fdriver-last">TSUNODA</span>
+                                    </div>
+                                    <div class="teams-listing-fdriver-img">
+                                        <picture class="teams-driver-first-img">
+                                            <img src="teams-img/image (39).avif" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="teams-listing-carfullimg">
+                                <picture class="teams-listing-carfullimg-1">
+                                    <img src="teams-img/image (40).avif" alt="">
+                                </picture>
+                            </div>
+                        </fieldset>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <footer id="default-f1-partners"></footer>
+    <script src="aryan.js"></script>
+
+
+</body>
+
+</html>
