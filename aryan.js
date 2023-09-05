@@ -1,3 +1,9 @@
+var loader = document.getElementById("loader-1");
+
+window.addEventListener("load" , function(){
+    loader.style.display = "none";
+})
+
 function updateClock() {
     var now = new Date();
     var dname = now.getDay(),
@@ -56,6 +62,8 @@ function initClock() {
 
 let menu_items = document.querySelectorAll('.item')
 
+
+
 menu_items.forEach( (e) => {
     let menu_child = e.childNodes[0];
 
@@ -110,6 +118,7 @@ menu_items.forEach( (e) => {
 });
 
 function fetch_menu_content(menu_name){
+    document.getElementById('driver-submenu').innerHTML = '<div class="loader" style="background: none;height: 0px;"></div>' ;
     fetch(menu_name)
     .then(response => response.text())
     .then(html => {
@@ -240,4 +249,4 @@ $( document ).ready(function() {
     
       
 });
-
+// ------------------------------------------

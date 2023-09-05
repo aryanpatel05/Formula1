@@ -4,7 +4,50 @@
     margin: 0px;
     padding: 0px;
 }
+/* ---------------------------------------------------------------------- */
+/* loader */
+.loader {
+  width:100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 111111;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
+  .loader-img img{
+    /* animation: respin 2s linear infinite; */
+  }
+  
+  @keyframes spin {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg);
+     }
+  }
+
+  @keyframes respin {
+    0% {/* transform: rotate(360deg); */}
+    100% {/* transform: rotate(0deg); */}
+  }
+
+  .loader::before {
+    content: '';
+    border-top: 2px solid red;
+    border-right: 2px solid whitesmoke;
+    border-bottom: 2px solid red;
+    border-left: 2px solid whitesmoke;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    display: block;
+}
+  /* ------------------------------------------------------------------------------ */
 #navbar {
     display: flex;
     align-items: center;
