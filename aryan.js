@@ -3,6 +3,30 @@ var loader = document.getElementById("loader-1");
 window.addEventListener("load" , function(){
     loader.style.display = "none";
 })
+// ------------------------------------------------------------------------------------
+const rankingElements = document.getElementsByClassName('ranking');
+
+for (var i = 0; i < rankingElements.length; i++) {
+    var rankingElement = rankingElements[i];
+    var pointsElement = rankingElement.getElementsByClassName("points")[0];
+
+    rankingElement.addEventListener('mouseover', createMouseOverHandler(rankingElement, pointsElement));
+
+    rankingElement.addEventListener('mouseout', createMouseOutHandler(pointsElement));
+}
+
+function createMouseOverHandler(rankingElement, pointsElement) {
+    return function () {
+        pointsElement.style.color = 'black';
+    };
+}
+
+function createMouseOutHandler(pointsElement) {
+    return function () {
+        pointsElement.style.color = 'black';
+    };
+}
+
 
 function updateClock() {
     var now = new Date();
@@ -249,4 +273,4 @@ $( document ).ready(function() {
     
       
 });
-// ------------------------------------------
+

@@ -4104,3 +4104,77 @@ input.txtPassword {
     box-sizing: border-box;
     margin-bottom: 30px;
 }
+/* ------------------------------------------------------------------------------------------------------- */
+/* THIS IS F1 */
+.this-is-f1-main {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.this-is-f1-main-sub {
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 100vh; */
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+}
+
+.tif-header {
+    text-align: center;
+    font-size: 50px;
+    /* border: 2px solid whitesmoke; */
+    color: red;
+}
+.tif-grid {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid whitesmoke;
+    margin-top: 10px;
+    /* height: 100vh; */
+}
+.tif-row1 {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+}
+
+.tif-box-sub-2 {
+    width: 50%;
+}
+
+.tif-box-1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+p.tif-box-p {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.tif-box-sub-1 {
+    width: 50%;
+    padding-top: 70px;
+    background-color: black;
+}
+p.tif-box-p-1 {
+    text-align: center;
+    font-size: 40px;
+    word-spacing: 0px;
+    line-height: 50px;
+    color: white;
+}
+
+p.tif-box-p-2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.tif-box-sub-2 img {
+    width: 100% !important;
+}
