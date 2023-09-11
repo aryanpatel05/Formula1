@@ -399,7 +399,7 @@ span.Sergio-flag {
 }
 
 .back-url {
-    background-image: url("bg@2x.avif");
+    background-image: url("images/bg@2x.avif");
     background-size: 100%;
     position: relative;
     background-repeat: no-repeat;
@@ -1000,7 +1000,7 @@ span.month-wrap {
 }
 
 .event-image {
-    background-image: url("maps/plus-white-x2.avif");
+    background-image: url("images/maps/plus-white-x2.avif");
     box-sizing: border-box;
 }
 
@@ -1022,7 +1022,7 @@ picture.event-image-sub {
 }
 
 .header-img-right-sub {
-    background-image: url("/maps/image%20(13).avif");
+    background-image: url("/images/maps/image%20(13).avif");
     min-height: 347px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1095,7 +1095,7 @@ span.month-wrap {
 }
 
 .event-image {
-    background-image: url("maps/plus-white-x2.avif");
+    background-image: url("images/maps/plus-white-x2.avif");
     box-sizing: border-box;
 }
 
@@ -1117,7 +1117,7 @@ picture.event-image-sub {
 }
 
 .header-img-right-sub {
-    background-image: url("/maps/image%20(13).avif");
+    background-image: url("/images/maps/image%20(13).avif");
     min-height: 347px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1186,7 +1186,7 @@ legend.card-title {
 
 
 .event-image-upcoming {
-    background-image: url("maps/plus-x2.avif");
+    background-image: url("images/maps/plus-x2.avif");
     background-size: 8px;
     margin-top: 8px;
 }
@@ -1975,7 +1975,7 @@ span.teams-listing-t-name {
 }
 .teams-listing-carfullimg {
     text-align: center;
-    background-image: url(teams-img/plus-x1.avif);
+    background-image: url(images/teams-img/plus-x1.avif);
     background-size: 12px;
     background-repeat: repeat;
     background-size: 8px;
@@ -2361,7 +2361,7 @@ span.Sergio-flag {
 }
 
 .back-url {
-    background-image: url("bg@2x.avif");
+    background-image: url("images/bg@2x.avif");
     background-size: 100%;
     position: relative;
     background-repeat: no-repeat;
@@ -2962,7 +2962,7 @@ span.month-wrap {
 }
 
 .event-image {
-    background-image: url("maps/plus-white-x2.avif");
+    background-image: url("images/maps/plus-white-x2.avif");
     box-sizing: border-box;
 }
 
@@ -2984,7 +2984,7 @@ picture.event-image-sub {
 }
 
 .header-img-right-sub {
-    background-image: url("/maps/image%20(13).avif");
+    background-image: url("/images/maps/image%20(13).avif");
     min-height: 347px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3057,7 +3057,7 @@ span.month-wrap {
 }
 
 .event-image {
-    background-image: url("maps/plus-white-x2.avif");
+    background-image: url("images/maps/plus-white-x2.avif");
     box-sizing: border-box;
 }
 
@@ -3079,7 +3079,7 @@ picture.event-image-sub {
 }
 
 .header-img-right-sub {
-    background-image: url("/maps/image%20(13).avif");
+    background-image: url("/images/maps/image%20(13).avif");
     min-height: 347px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3148,7 +3148,7 @@ legend.card-title {
 
 
 .event-image-upcoming {
-    background-image: url("maps/plus-x2.avif");
+    background-image: url("images/maps/plus-x2.avif");
     background-size: 8px;
     margin-top: 8px;
 }
@@ -3491,9 +3491,8 @@ picture.drivers-listing-driver-pic-num {
 .driver-info-cont-1 {
     box-sizing: border-box;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: auto;
- 
 }
 
 .player-full-image-cont img {width: 100%;}
@@ -3649,6 +3648,7 @@ p.text-base-1 {
 
 .player-homescreen-photos{
     max-width: 1300px;
+    width: 100%;
 }
 
 
@@ -3939,7 +3939,7 @@ span.teams-listing-t-name {
 }
 .teams-listing-carfullimg {
     text-align: center;
-    background-image: url(teams-img/plus-x1.avif);
+    background-image: url(images/teams-img/plus-x1.avif);
     background-size: 12px;
     background-repeat: repeat;
     background-size: 8px;
