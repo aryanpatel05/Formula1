@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>F1 OFFICIAL | FORMULA1.com</title>
+    <link rel="stylesheet" href="aryan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="initClock()">
+    <div class="loader" id="loader-1"></div>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="61fc02163cf0e70004222072 (2).png" alt="F1.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="./index.html" class="nav-upper">HOME</a></li>
+            <li class="item"><a href="./teams.html" class="nav-upper">TEAM</a></li>
+            <li class="item"><a href="./schedule.html" class="nav-upper">SCHEDULE</a></li>
+            <li class="item"><a href="./drivers.html#" class="nav-upper" id="driver-main-menu">DRIVER</a>
+                <div class="nav-secondary" style="display: none;" id="nav-secondary">
+                    <div class="ns-wrapper">
+                        <div class="navwidth">
+                            <div class="nav-contents">
+                                <div class="nav-header">
+                                    <a class="FRAME">HALL OF FRAME</a>
+                                    <!-- <a href=""></a> -->
+                                </div>
+                                <div class="nav-list drivers" id="driver-submenu">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+            <li class="item"><a href="https://f1tv.formula1.com/" target="_blank" class="nav-upper">F1 TV</a></li>
+            <!-- <li class="item"><a href="#" class="nav-upper">STORE</a></li> -->
+            <li class="item"><a href="./videos.html" class="nav-upper">VIDEOS</a></li>
+            <li class="item"><a href="#" class="nav-upper">SIGN IN</a></li>
+
+        </ul>
+
+
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>,
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <div class="this-is-f1-main">
+        <div class="this-is-f1-main-sub">
+            <div class="tif-header">
+                <h1>THIS IS F1</h1>
+            </div>
+             
+
+
+        </div>
+        
+        <div class="this-is-f1-main-sub-1">
+            <div class="tif-grid">
+                <div class="tif-grid-sub">
+                    <div class="tif-row1">
+                        <div class="tif-box-1">
+                            <div class="tif-box-sub-1">
+                                <p class="tif-box-p">A SPORT WHICH HAS </p>
+                                <p class="tif-box-p-2"> STADIUMS  </p>
+                                <p class="tif-box-p-1"> THAT SPAN CITIES</p>
+
+                            </div>
+                            <div class="tif-box-sub-2">
+                                <img src="sign-photo/CCoX1T3UIAMyZAN.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tif-row1">
+                        <div class="tif-box-1">
+                            <div class="tif-box-sub-2">
+                                <img src="sign-photo/thf.jpg" alt="">
+                            </div>
+                            <div class="tif-box-sub-1-1 ">
+                                <div class="tif-word-1">A SPORT WHICH HAS </div>
+                                <div class="tif-world-flex">
+                                    <div class="tif-word-1-1">75</div>
+                                    <div class="tif-word-2">
+                                        <div class="tif-word-3">RACE</div>
+                                        <div class="tif-word-4">TRACKS</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="tif-row1">
+                        <div class="tif-box-1">
+
+                            <div class="tif-box-sub-1-2">
+                                <div class="tif-word-1">A SPORT WHICH COVER </div>
+                                <div class="tif-world-flex">
+                                    <div class="tif-word-1-1-2">5</div>
+                                    <div class="tif-word-2-2">
+                                        <div class="tif-word-3-2">CONTINENTS</div>
+
+                                    </div>
+                                </div>
+                                <div class="tif-word-sub-1">with</div>
+                                <div class="tif-world-flex">
+                                    <div class="tif-word-1-1-2">20</div>
+                                    <div class="tif-word-2-1">
+                                        <div class="tif-word-3-1">DIFFERENT</div>
+                                        <div class="tif-word-4-1">COUNTRIES</div>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="tif-box-sub-2">
+                                <img src="sign-photo/M284257.jpg" alt="">
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="tif-row1">
+                        <div class="tif-box-1">
+                            <div class="tif-box-sub-2">
+                                <img src="sign-photo/pxfuel.jpg" alt="">
+                            </div>
+                            <div class="tif-box-sub-1-4 ">
+                                <div class="flex-box-4">
+                                    <div class="tif-word-box-4">10 </div>
+                                    <div class="tif-word-box-4-1"> TEAMS FIGHT </div>
+                                </div>
+                                <p class="tif-box-p--box-4"> WITH THERE</p>
+                                <div class="flex-box-4-1">
+                                    <p class="tif-box-p-1-box-4"> 20</p>
+                                    <p class="tif-box-p-1-box-4-2">BEST DRIVERS</p>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tif-row1">
+                        <div class="tif-box-1">
+                            <div class="tif-box-sub-1">
+                                <p class="tif-box-p">CARS THAT RUN AT  </p>
+                                <div class="flex-box-4">
+                                    <div class="tif-word-box-5">200</div>
+                                    <div class="tif-word-box-5-1"> mph </div>
+                                </div>
+                                <p class="tif-box-p-1"> SPEED IN CIRCUITS </p>
+
+                            </div>
+                            <div class="tif-box-sub-2">
+                                <img src="sign-photo/wallpaperflare.com_wallpaper.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tif-row1">
+                        <div class="tif-box-1">
+                            <div class="tif-box-sub-2">
+                                <img src="sign-photo/wallpaperflare.com_wallpaper 2.jpg" alt="">
+                            </div>
+                            <div class="tif-box-sub-1">
+                                <p class="tif-box-p">CARS THAT TAKE TURN AT  </p>
+                                <div class="flex-box-4">
+                                    <div class="tif-word-box-6">4</div>
+                                    <div class="tif-word-box-6-1"> G </div>
+                                </div>
+                                <p class="tif-box-p-1">GRAVITATIONAL FORCE </p>
+
+                            </div>
+                          
+                        </div>
+
+                    </div>
+
+                    <div class="tif-row1">
+                        <div class="tif-box-1">
+                            <div class="tif-box-sub-1">
+                                <p class="tif-box-p">A SPORT THAT MAKES EVEN </p>
+                                <p class="tif-box-7-2"> VEGAS  </p>
+                                <p class="tif-box-7-1"> STOP AND STARE</p>
+
+                            </div>
+                            <div class="tif-box-sub-2">
+                                <img src="sign-photo/formula-1-racing-team-car-from-o.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tif-row1">
+                        <div class="tif-box-1">
+                            <div class="tif-box-sub-2">
+                                <img src="sign-photo/6725718.jpg" alt="">
+                            </div>
+                            <div class="tif-box-sub-1">
+                                <p class="tif-box-p"> ONE MISTAKE  </p>
+                                <p class="tif-box-8"> AND </p>
+                                <p class="tif-box-p-1">THERE'S NO GOING BACK</p>
+
+                            </div>
+                          
+                        </div>
+
+                    </div>
+                    
+                    <div class="tif-row1">
+                        <div class="tif-box-1">
+                          
+                            <div class="tif-box-sub-1">
+                                <p class="tif-box-p">WE PLAY THIS SPORT  </p>
+                                <div class="flex-box-4">
+                                    <div class="tif-word-box-6">23</div>
+                                    <div class="tif-word-box-6-1"> TIMES </div>
+                                </div>
+                                <p class="tif-box-9-1">A YEAR... </p>
+
+                            </div>
+                            <div class="tif-box-sub-2">
+                                <img src="sign-photo/image.avif" alt="">
+                            </div>
+                          
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <footer id="default-f1-partners"></footer>
+    <script src="aryan.js"></script>
+</body>
+
+</html>
