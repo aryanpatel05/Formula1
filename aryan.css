@@ -503,7 +503,10 @@ span.team-color {
     width: 100%;
     /* height: 100vh; */
 }
-
+span.h {
+    font-size: 22px;
+    padding-top: 17px;
+}
 .ourpartners {
     color: white;
     font-size: 26px;
