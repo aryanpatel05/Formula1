@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;1,400;1,700&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Titillium+Web:ital,wght@0,400;1,400;1,700&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -127,43 +129,37 @@
 
 .datetime {
     color: rgb(255, 255, 255);
-
-
     padding: 5px 0;
-
     background: rgb(16, 16, 30);
     font-family: "Segoe UI", sans-serif;
-    width: 340px;
+    width: 250px;
     border: 3px solid black;
     border-radius: 5px;
-
-    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1)); */
     transition: background 0.5s ease 0s, box-shadow 0s ease 0s;
 }
 
 .datetime:hover {
-    background: rgb(46, 148, 227);
-
+    background: red;
     box-shadow: rgb(46, 148, 227) 0px 0px 30px;
-    border: 3px solid white;
+    border: 2px solid black;
     cursor: pointer;
-
     /* box-shadow: rgb(46, 148, 227) 0px 0px 30px; */
     /* border: 3px solid white; */
     /* cursor: pointer; */
-
+    color: black;
 }
 
 .date {
     font-size: 10px;
-    font-weight: 600;
+    font-weight: bold;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    font-family: 'Titillium Web';
 }
 
 .time {
-    font-size: 30px;
+    font-size: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +167,7 @@
 
 .time span:not(:last-child) {
     position: relative;
-    margin: 0px 6px;
+    margin: 0px 5px;
     font-weight: 600;
     text-align: center;
     letter-spacing: 3px;
@@ -309,6 +305,7 @@ a:hover {
 
 .heading-sub img {
     margin-top: 6px;
+    width: 90px;
 }
 
 .heading-sub {
@@ -397,11 +394,12 @@ span.Sergio-flag {
     border-top-color: initial;
     background: rgb(31, 30, 40);
     color: white;
-    letter-spacing: 7px;
+    /* letter-spacing: 7px; */
+    /* display: flex; */
 }
 
 span.Sergio-flag img {
-    width: 8%;
+    width: 10%;
     display: inline-block;
 }
 
@@ -448,8 +446,10 @@ ul.f1-podium {
 }
 
 .podium-rank {
-    font-family: F1Bold;
+    font-family: 'Titillium Web';
     font-size: 14px;
+    padding-top: 4px;
+    font-style: italic;
 }
 
 span.podiumright {
@@ -464,7 +464,8 @@ span.points {
     padding: 2px 10px;
     background: rgb(237, 237, 237);
     box-sizing: border-box;
-    font-family: fangsong;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 span.team-color {
@@ -495,6 +496,8 @@ span.team-color {
     color: white;
     margin: 20px auto auto;
     font-size: 12px;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .btn:hover {
@@ -515,14 +518,21 @@ span.team-color {
     /* height: 100vh; */
 }
 span.h {
-    font-size: 22px;
-    padding-top: 17px;
+    font-size: 29px;
+    padding-top: 8px;
+    font-family: 'Titillium Web';
+    padding-left: 4px;
+    font-style: italic;
+    font-weight: 700;
 }
 .ourpartners {
     color: white;
     font-size: 26px;
+    font-style: italic;
     letter-spacing: 2px;
-    margin-top: 7px;
+    margin-top: 1px;
+    font-weight: 700;
+    font-family: 'Titillium Web';
 }
 
 ul.coloum1 {
@@ -606,6 +616,8 @@ ul.coloum3 {
     border-left-color: initial;
     border-radius: 0px 0px 35px;
     box-sizing: border-box;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .lastcoloum li {
@@ -696,7 +708,7 @@ hr.bottom-line {
 }
 span.letters {
     display: inline-block;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
 }
 
 .Schedule-sub-2 {
@@ -707,7 +719,7 @@ span.letters {
     max-width: 1300px;
     justify-content: space-between;
     margin: auto;
-    letter-spacing: 2px;
+    /* letter-spacing: 69px; */
     border-top: 10px solid black;
     border-right: 10px solid black;
     border-top-right-radius: 25px;
@@ -719,9 +731,10 @@ span.letters {
 
 .upper-1 {
     text-decoration: none;
-    font-family: "Titillium Web", sans-serif;
+    font-family: 'Titillium Web';
     color: red;
     font-size: 11px;
+    font-style: italic;
 }
 
 a {
@@ -733,7 +746,7 @@ a {
 
 .icon img {
     width: 19px;
-    margin-top: 11px;
+    margin-top: 14px;
 }
 
 .icon {
@@ -782,9 +795,11 @@ span.track-name {
 }
 
 h1.no-margin {
-    font-family: "Russo One", sans-serif;
-    font-size: 60px;
+    font-family: 'Titillium Web';
+    font-size: 70px;
+    /* font-weight: 900; */
     font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -850,7 +865,8 @@ h1.no-margin {
 }
 
 .cont-1-2 p {
-    font-family: "Titillium Web", sans-serif;
+    font-family: 'Titillium Web';
+    font-style: italic;
     font-size: 25px;
     color: currentcolor;
 }
@@ -872,6 +888,8 @@ h1.no-margin {
     padding: 0px 10px 10px 0px;
     letter-spacing: 2px;
     color: red;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .header-main {
@@ -908,6 +926,8 @@ legend.left-head {
     padding-right: 10px;
     color: red;
     font-weight: bolder;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .header-cont-1 {
@@ -951,7 +971,8 @@ p.no-margin-1 {
     font-size: 30px;
     color: white;
     margin-bottom: 6px;
-
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .country-flag img {
@@ -3033,6 +3054,9 @@ span.month-wrap {
     padding: 2px 5px 1px;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 .header-background {
@@ -3055,6 +3079,8 @@ span.month-wrap {
     color: white;
     margin-top: 15px;
     font-weight: bolder;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .event-title {
@@ -3063,6 +3089,8 @@ span.month-wrap {
     letter-spacing: 2px;
     margin-top: 12px;
     margin-bottom: 3px;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .event-image-sub img {
@@ -3145,6 +3173,8 @@ legend.card-title {
     padding-right: 10px;
     margin-top: 40px;
     color: red;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .race-card {
@@ -3198,6 +3228,8 @@ p.no-margin-upcoming {
     font-size: 20px;
     color: black;
     margin-bottom: 6px;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 span.month-wrap-upcoming {
@@ -3208,6 +3240,8 @@ span.month-wrap-upcoming {
     background: black;
     color: white;
     text-transform: uppercase;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .event-detalis-upcoming {
@@ -3222,6 +3256,8 @@ span.month-wrap-upcoming {
     color: black;
     margin-top: 10px;
     font-weight: bolder;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .event-title-upcoming {
@@ -3229,7 +3265,8 @@ span.month-wrap-upcoming {
     font-size: 14px;
     letter-spacing: 1px;
     margin-top: 2px;
-    font-family: "Titillium Web", sans-serif;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .event-image-sub-upcoming img {
@@ -3264,18 +3301,18 @@ span.month-wrap-upcoming {
 ul.footer-bottom-sub {
     display: flex;
     flex-wrap: wrap;
-
     list-style: none;
-
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 li.f1-nav_item {
     text-decoration: none;
-    margin-right: 40px;
+    margin-right: 47px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 100;
     text-transform: uppercase;
-    padding: 11px;
+    padding: 10px;
 }
 
 span.f1-nav_item-sub {
@@ -3320,6 +3357,9 @@ p.drivers-cont-sub-2 {
     max-width: 45%;
     color: black;
     letter-spacing: 0.5px;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 100;
 }
 
 .driver-full-list {
@@ -3335,6 +3375,9 @@ p.drivers-cont-sub-2 {
 
 .letters:first-child .letters:nth-child(2){
     color:red;
+    /* font-weight: bold; */
+    /* font-family: auto; */
+    font-style: italic;
 }
 
 fieldset.drivers-card {border-width: 2px 2px 10px 10px;border-top-style: solid;border-color: black black rgb(225, 6, 0) rgb(225, 6, 0);border-right-style: solid;width: 100%;text-align: left;border-bottom-style: initial;border-left-style: initial;margin-top: 40px;border-top-right-radius: 10px;padding-right: 15px;}
@@ -3373,16 +3416,19 @@ fieldset.drivers-card {border-width: 2px 2px 10px 10px;border-top-style: solid;b
     font-size: 35px;
     font-weight: bold;
     margin-top: 10px;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .drivers-listing-rank-points-up {
     font-size: 22px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: bolder;
     /* font-family: 'Abril Fatface', cursive; */
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Titillium Web';
     /* font-family: 'Lobster', cursive; */
     /* font-family: 'Russo One', sans-serif; */
+    font-style: italic;
 }
 .drivers-listing-rank-points-down {
     background-color: #000;
@@ -3394,8 +3440,11 @@ fieldset.drivers-card {border-width: 2px 2px 10px 10px;border-top-style: solid;b
     width: 65px;
     /* font-family: 'Abril Fatface', cursive; */
     /* font-family: 'Archivo Black', sans-serif; */
-    font-family: 'Lobster', cursive;
+    font-family: 'Titillium Web';
     /* font-family: 'Russo One', sans-serif; */
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 1.1px;
 }
 .drivers-listing-rank-points {
     text-align: right;
@@ -3443,27 +3492,10 @@ fieldset.drivers-card {border-width: 2px 2px 10px 10px;border-top-style: solid;b
     padding: 0 0 0 8px;
 }
 
-span.drivers-listing-info-name {
+span.drivers-listing-info-name {font-size: 22px;/* font-family: 'Abril Fatface', cursive; *//* font-family: 'Archivo Black', sans-serif; */font-family: 'Titillium Web';/* font-family: 'Russo One', sans-serif; */font-style: italic;font-weight: 100;padding-left: 3px;}
 
-    font-size: 22px;
-
-    /* font-family: 'Abril Fatface', cursive; */
-    /* font-family: 'Archivo Black', sans-serif; */
-    font-family: 'Lobster', cursive;
-    /* font-family: 'Russo One', sans-serif; */
-}
-
-span.drivers-listing-info-surname {
-
-    font-size: 25px;
-
-    /* font-family: 'Abril Fatface', cursive; */
-    /* font-family: 'Archivo Black', sans-serif; */
-    /* font-family: 'Lobster', cursive; */
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 2px;
-}
-p.drivers-listing-team-name {margin-top: 5px;font-weight: bolder;color: #67676d;letter-spacing: 1px;font-family: 'Abril Fatface', cursive;/* font-family: 'Archivo Black', sans-serif; *//* font-family: 'Lobster', cursive; *//* font-family: 'Russo One', sans-serif; */}
+span.drivers-listing-info-surname {font-size: 27px;/* font-family: 'Abril Fatface', cursive; *//* font-family: 'Archivo Black', sans-serif; *//* font-family: 'Lobster', cursive; */font-family: 'Titillium Web';letter-spacing: 1px;font-style: italic;font-weight: bolder;line-height: 16px;/* text-align: left; */}
+p.drivers-listing-team-name {margin-top: 5px;font-weight: bolder;color: #67676d;letter-spacing: 1px;font-family: 'Titillium Web';/* font-family: 'Archivo Black', sans-serif; *//* font-family: 'Lobster', cursive; *//* font-family: 'Russo One', sans-serif; */font-style: italic;}
 
 .drivers-listing-driver-pic {
     box-sizing: border-box;
@@ -3564,17 +3596,19 @@ a.text-link {
 th.stat-key {
     padding: 4px 0px 4px 50px;
     text-align: left;
-    font-family: 'F1BoldRegular',Helvetica,sans-serif;
+    font-family: 'Titillium Web';
     font-weight: 700;
     font-size: 24px;
- 
     line-height: 1.222;
     box-sizing: border-box;
     letter-spacing: 1px;
+    font-style: italic;
 }
 
 table.driver-section-2-table {
     width: 100%;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 .driver-section-2-sub-1 {
     box-sizing: border-box;
@@ -3611,7 +3645,8 @@ h1.driver-name {
  /* font-family: 'Archivo Black', sans-serif; */
  /* font-family: 'Lobster', cursive; */
  /* font-family: 'Russo One', sans-serif; */
- font-family: 'Tektur', cursive;
+ font-family: 'Titillium Web';
+ font-style: italic;
 }
 section.player-biography {
     background: #fff;
@@ -3624,6 +3659,8 @@ section.player-biography {
 .text-parbase {
     padding: 0 40px;
     box-sizing: border-box;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 h3.bio {
@@ -3636,7 +3673,8 @@ h3.bio {
     /* font-family: 'Archivo Black', sans-serif; */
     /* font-family: 'Lobster', cursive; */
     /* font-family: 'Russo One', sans-serif; */
-    font-family: 'Tektur', cursive;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 p.text-base-1 {
@@ -3711,7 +3749,9 @@ p.text-base-1 {
 .gallery-text {
     display: flex;
     /* flex-wrap: wrap; */
+    font-family: 'Titillium Web';
     width: 20%;
+    font-style: italic;
 }
 .gallery-small-pics {
     box-sizing: border-box;
@@ -3776,8 +3816,9 @@ p.video-heading-2 {
 p.video-heading-1 {
     font-size: xx-large;
     font-weight: bolder;
-    font-family: 'Russo One';
+    font-family: 'Titillium Web';
     letter-spacing: 1px;
+    font-style: italic;
 }
 
 .video-first {
@@ -3855,7 +3896,9 @@ fieldset.teams-listing-wrapper:hover{
 .teams-listing-rank {
     font-size: 2.625rem;
     line-height: 3rem;
-    font-family: 'Archivo Black';
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 .teams-listing-points {
@@ -3863,10 +3906,11 @@ fieldset.teams-listing-wrapper:hover{
 }
 
 .teams-listing-upper {
-    font-size: 23px;
+    font-size: 28px;
     line-height: 24px;
-    font-family: 'Zen Dots', cursive;
-    /* font-weight: bold; */
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-style: italic;
 }
 
 .teams-listing-lower {
@@ -3877,8 +3921,10 @@ fieldset.teams-listing-wrapper:hover{
     background: #000;
     white-space: nowrap;
     text-transform: uppercase;
-    font-family: 'Russo One';
+    font-family: 'Titillium Web';
     letter-spacing: 2px;
+    font-style: italic;
+    font-weight: 700;
 }
 
 .teams-listing-info {
@@ -3932,9 +3978,11 @@ span.teams-listing-tcolor {
 }
 
 span.teams-listing-fdriver-first {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 17px;
-    font-family: monospace;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 100;
 }
 
 span.teams-listing-fdriver-last {
@@ -3943,17 +3991,20 @@ span.teams-listing-fdriver-last {
     /* font-family: auto; */
     /* letter-spacing: 2px; */
     /* font-family: 'Abril Fatface', cursive; */
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Titillium Web';
     /* font-family: 'Lobster', cursive; */
     /* font-family: 'Oswald', sans-serif; */
     /* font-family: 'Russo One', sans-serif; */
     /* font-family: 'Tektur', cursive; */
-    font-size: large;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 700;
 }
 span.teams-listing-t-name {
     font-weight: bolder;
-    font-family: 'Archivo Black';
+    font-family: 'Titillium Web';
     font-size: 25px;
+    font-style: italic;
 }
 
 .teams-listing-fdriver-img {
@@ -4170,6 +4221,13 @@ p.tif-box-p {
     font-size: 40px;
     text-align: center;
     color: white;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 .tif-box-sub-1 {
@@ -4183,6 +4241,12 @@ p.tif-box-p-1 {
     word-spacing: 3px;
     line-height: 50px;
     color: white;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+    line-height: 56px;
+    line-height: 62px;
 }
 
 p.tif-box-p-2 {
@@ -4192,6 +4256,11 @@ p.tif-box-p-2 {
     text-align: center;
     line-height: 2;
     color: RED;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+    line-height: 50px;
 }
 
 .tif-box-sub-2 img {
@@ -4209,12 +4278,24 @@ p.tif-box-p-2 {
     font-size: 40px;
     text-align: center;
     color: white;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 .tif-word-1-1 {
     font-size: 95px;
     text-align: center;
     color: red;
+    /* font-size: 1rem; */
+    /* font-family: 'Titillium Web'; */
+    font-style: italic;
+    font-weight: 700;
 }
 
 .tif-word-3 {
@@ -4222,12 +4303,22 @@ p.tif-box-p-2 {
     text-align: center;
     color: white;
     text-align: left;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+    padding-left: 4px;
 }
 
 .tif-word-4 {
     font-size: 38px;
     text-align: center;
     color: white;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+    line-height: 10px;
 }
 
 .tif-world-flex {
@@ -4237,7 +4328,7 @@ p.tif-box-p-2 {
 
 .tif-word-2 {
     padding-left: 7px;
-    padding-top: 12px;
+    padding-top: 7px;
 }
 .tif-box-sub-1-2 {
     width: 50%;
@@ -4248,6 +4339,14 @@ p.tif-box-p-2 {
     font-size: 95px;
     text-align: center;
     color: red;
+    /* font-size: 1rem; */
+    /* font-family: 'Titillium Web'; */
+    font-style: italic;
+    font-weight: 700;
+    /* font-size: 1rem; */
+    /* font-family: 'Titillium Web'; */
+    font-style: italic;
+    font-weight: 700;
 }
 
 .tif-word-2-2 {
@@ -4261,35 +4360,55 @@ p.tif-box-p-2 {
     font-size: 30px;
     text-align: center;
     color: white;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 .tif-word-3-1 {
     font-size: 35px;
     text-align: center;
     color: white;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 .tif-word-4-1 {
     font-size: 35px;
     text-align: center;
     color: white;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+    line-height: 19px;
 }
 .tif-word-3-2 {
-    padding-left: 5px;
     font-size: 40px;
     text-align: center;
     color: white;
-    padding-top: 46px;
+    padding-top: 39px;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 .tif-word-2-1 {
-    padding-top: 15px;
+    padding-top: 9px;
     padding-left: 5px;
 }
 .tif-word-box-4 {
     font-size: 95px;
     text-align: center;
     color: red;
+    /* font-size: 1rem; */
+    /* font-family: 'Titillium Web'; */
+    font-style: italic;
+    font-weight: 700;
 }
 
 p.tif-box-p--box-4 {
@@ -4297,6 +4416,10 @@ p.tif-box-p--box-4 {
     text-align: center;
     color: white;
     padding-left: 112px;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 p.tif-box-p-1-box-4 {
@@ -4304,14 +4427,21 @@ p.tif-box-p-1-box-4 {
     text-align: center;
     color: red;
     padding-left: 30px;
+    /* font-family: 'Titillium Web'; */
+    font-style: italic;
+    font-weight: 700;
 }
 
 .tif-word-box-4-1 {
     font-size: 40px;
     text-align: center;
     color: white;
-    padding-top: 45px;
-    padding-left: 10px;
+    padding-top: 40px;
+    padding-left: 5px;
+    /* font-size: 1rem; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 
@@ -4320,9 +4450,12 @@ p.tif-box-p-1-box-4-2 {
     font-size: 40px;
     text-align: center;
     color: white;
-    padding-top: 45px;
-    padding-left: 10px;
+    padding-top: 38px;
+    padding-left: 5px;
     /* line-height: 2px; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 .flex-box-4-1 {
@@ -4352,7 +4485,10 @@ p.tif-box-p-1-box-4-2 {
     text-align: center;
     color: white;
     padding-top: 24px;
-    padding-left: 5px;
+    /* padding-left: 5px; */
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 
 .tif-word-box-5 {
@@ -4360,25 +4496,38 @@ p.tif-box-p-1-box-4-2 {
     text-align: center;
     color: red;
     padding-left: 30px;
+    /* font-family: 'Titillium Web'; */
+    font-style: italic;
+    font-weight: 700;
 }
 .tif-word-box-6 {
     font-size: 75px;
     text-align: center;
     color: red;
     padding-left: 30px;
+    /* font-family: 'Titillium Web'; */
+    font-style: italic;
+    font-weight: 700;
 }
 .tif-word-box-6-1 {
     font-size: 40px;
     text-align: center;
     color: white;
-    padding-top: 30px;
+    padding-top: 22px;
     padding-left: 1px;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
 }
 p.tif-box-7-2 {
     font-size: 50px;
     text-align: center;
     line-height: 2;
     color: RED;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+    line-height: 41px;
 }
 
 p.tif-box-7-1 {
@@ -4387,12 +4536,20 @@ p.tif-box-7-1 {
     word-spacing: 0px;
     line-height: 50px;
     color: white;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    line-height: 62px;
+    font-weight: 700;
 }
 p.tif-box-8 {
     font-size: 50px;
     text-align: center;
     line-height: 2;
     color: RED;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+    line-height: 32px;
 }
 p.tif-box-9-1 {
     text-align: center;
@@ -4401,4 +4558,112 @@ p.tif-box-9-1 {
     line-height: 50px;
     color: white;
     padding-top: 5px;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+}
+span.lastn {
+    /* font-family: 'Titillium Web'; */
+    font-weight: bolder;
+    font-family: 'Titillium Web';
+    /* font-family: 'Teko', sans-serif; */
+    font-size: 20px;
+    font-style: italic;
+}
+
+span.teamn {
+    padding-left: 18px;
+    padding-top: 7px;
+    font-family: 'Titillium Web';
+    font-size: 13px;
+    font-style: italic;
+}
+
+span.firstn {
+    font-family: 'Titillium Web';
+    /* font-weight: bolder; */
+    font-style: italic;
+    font-size: 18px;
+}
+
+span.Perez-rank {
+    display: flex;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+span.Sergio-rank {
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 22px;
+    /* font-style: italic; */
+}
+
+.heading-sub .div {
+    /* width: 10%; */
+}
+
+span#dayname {
+    font-family: 'Titillium Web';
+}
+
+span#month {
+    font-family: 'Titillium Web';
+}
+
+span#daynum {
+    font-family: 'Titillium Web';
+}
+
+span#year {
+    font-family: 'Titillium Web';
+}
+
+span#hour {
+    font-family: 'Titillium Web';
+}
+
+span#minutes {
+    font-family: 'Titillium Web';
+}
+
+span#seconds {
+    font-family: 'Titillium Web';
+}
+
+span#period {
+    font-family: 'Titillium Web';
+}
+.latest-news {
+}
+
+p.text-sub {
+    font-family: 'Titillium Web';
+    font-style: italic;
+}
+p.f1-uppercase {
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 600;
+}
+
+.down {
+    font-family: 'Titillium Web';
+    font-style: italic;
+}
+.quick-lines {
+    font-family: 'Titillium Web';
+    font-style: italic;
+}
+
+span.driver-photo-details-main-name-1 {
+    font-family: 'Titillium Web';
+    font-style: italic;
+}
+
+p.gallery-description.hidden {
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
