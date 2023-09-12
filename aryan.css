@@ -290,6 +290,17 @@ a:hover {
 
 .back-video {left: 0;position: absolute;right: 0px;bottom: 0px;top: 0;z-index: 1;min-width: 100%;min-height: 100%;max-width: 100%;}
 
+#home iframe {
+    left: 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 0;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+}
 .home_content {
     z-index: 2;
     width: 1100px;
