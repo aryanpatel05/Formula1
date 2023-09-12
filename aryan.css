@@ -282,7 +282,7 @@ a:hover {
     justify-content: center;
     display: flex;
     height: 100vh;
-    background: 0% 0% / cover no-repeat black;
+    background: 0% 0% / cover no-repeat transparent;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -296,7 +296,7 @@ a:hover {
     right: 0px;
     bottom: 0px;
     top: 0;
-    z-index: 1;
+    z-index: -1;
     min-width: 100%;
     min-height: 100%;
     max-width: 100%;
