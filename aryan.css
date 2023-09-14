@@ -4208,6 +4208,7 @@ input.txtPassword {
 
 .tif-box-sub-2 {
     width: 50%;
+    z-index: 22;
 }
 
 .tif-box-1 {
