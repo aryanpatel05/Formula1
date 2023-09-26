@@ -3204,9 +3204,7 @@ picture.event-image-sub-upcoming {
     margin-top: 0px;
 }
 
-img {
-    width: 80%;
-}
+.sign-external img {width: 133px;}
 
 .country-flag-upcoming img {
     width: 50px;
@@ -4048,18 +4046,22 @@ span.teams-listing-t-name {
 }
 /* ------------------------------------------------------------------------------------------------ */
 /* sign */
+
+body {
+    background-color: #f7f4f1;
+}
 .sign-main {
     box-sizing: border-box;
     background-color: #15151e;
 }
 
 img.sign-logo {
-    width: 70% !important;
+    width: 100% !important;
     margin: 40px;
 }
 
 .sign-nav-1 {
-    width: 25%;
+    width: 14%;
     /* margin: 40px; */
 }
 .sign-nav-tabs {
@@ -4075,7 +4077,7 @@ ul.sign-ul {
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
-    padding: 15px;
+    /* padding: 10px; */
 }
 
 li.sign-list-tabs {
@@ -4084,19 +4086,24 @@ li.sign-list-tabs {
     font-size: larger;
     text-align: center;
     /* align-items: center; */
+    padding: 7px;
+    box-sizing: border-box;
 }
 
 a.sign-link-tags {
     color: white;
-    font-family: 'Black Ops One', cursive;
-    /* font-family: 'Titillium Web', sans-serif; */
+    /* font-family: 'Black Ops One', cursive; */
+    font-family: 'Titillium Web';
     /* font-family: 'Zen Dots', cursive; */
     letter-spacing: 1px;
+    font-style: italic;
+    font-weight: bolder;
 }
 .sign-cont {
     margin: 20px auto;
     padding: 10px 20px 0;
     min-height: 450px;
+    /* background-color: antiquewhite; */
     box-sizing: border-box;
 }
 
@@ -4104,6 +4111,14 @@ a.sign-link-tags {
     max-width: 640px;
     margin: auto;
     box-sizing: border-box;
+}
+
+a.forgot-pass-1 {display: block;text-align: right;margin-top: 35px;margin-right: 6px;color: black;font-family: 'Titillium Web';font-style: italic;font-size: 18px;font-weight: 800;border-bottom: 2px solid red;width: fit-content;}
+
+.forgot-pass {
+    box-sizing: border-box;
+    /* border-bottom: 2px solid red; */
+    text-align: -webkit-right;
 }
 
 .login-wrapper {
@@ -4116,30 +4131,35 @@ a.sign-link-tags {
     margin: auto;
     border-radius: 10px;
     padding: 0 20px;
+    cursor: pointer;
     box-sizing: border-box;
 }
 
 h1.sign-form-heading {
     font-family: 'Black Ops One';
-    font-size: 32px;
+    font-size: 38px;
     border-bottom: 1px solid #d0d0d2;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
     margin-bottom: 30px;
     text-transform: uppercase;
     line-height: 1.1;
     letter-spacing: 1px;
     color: #5e5757;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 800;
 }
 
 form#sign-login-form {
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .field {
     margin-bottom: 30px;
 }
 
-label {font-family: "Titillium Web";font-size: 17px;letter-spacing: .2px;color: #15151e;display: block;font-weight: 400;padding: 0 10px;max-width: 100%;margin-bottom: 5px;box-sizing: border-box;}
+label {font-family: "Titillium Web";font-size: 19px;letter-spacing: .2px;color: #15151e;display: block;font-weight: 400;padding: 0 0;max-width: 100%;margin-bottom: 5px;box-sizing: border-box;position: relative;font-family: 'Titillium Web';font-style: italic;}
 
 input.txtLogin {
     font-family: "Titillium Web";
@@ -4149,8 +4169,9 @@ input.txtLogin {
     border: solid 1px #15151e;
     border-radius: 10px;
     display: block;
-    width: 100%;
+    width: 99%;
     padding: 15px 10px;
+    box-sizing: border-box;
 }
 input.txtPassword {
     font-family: "Titillium Web";
@@ -4159,14 +4180,132 @@ input.txtPassword {
     background: #fff;
     border: solid 1px #15151e;
     border-radius: 10px;
-    display: block;
-    width: 100%;
+    width: 99%;
     padding: 15px 10px;
+    box-sizing: border-box;
 }
 
 .field-password {
     box-sizing: border-box;
     margin-bottom: 30px;
+    width: 100%;
+}
+button.btn.btn-primary {
+    width: 20%;
+    padding-left: 32px;
+    margin-left: 0;
+}
+
+.secondary-actions {
+    display: flex;
+    box-sizing: border-box;
+}
+
+a.pagelinks.link.link--inline.text-nowrap {
+    color: black;
+    /* padding-left: 52px; */
+    
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18px;
+    border-bottom: 2px solid red;
+    width: fit-content;
+    margin-left: 26px;
+}
+
+span.dontHaveAccountYet {
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+}
+footer {
+    padding: 20px 20px 10px 20px;
+}
+
+.footer-wrapper {
+    border: solid 10px #38383f;
+    padding: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-top-right-radius: 25px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+}
+
+.footerNav {
+    padding: 10px 0;
+    clear: both;
+    overflow: auto;
+}
+
+.sign-f-logo {
+    float: left;
+}
+
+a.sign-external {
+    font-family: F1;
+    font-size: 12px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    display: inline-block;
+    color: #15151e;
+    margin-left: 20px;
+}
+
+.static-links {
+    float: right;
+}
+
+.static-links ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.static-links ul li {
+    display: inline-block;
+}
+
+a.internalLinks {
+    font-family: F1;
+    font-size: 12px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    display: inline-block;
+    color: #15151e;
+    margin-left: 20px;
+}
+.lanuguage_copyright {
+    font-family: "Titillium Web";
+    font-size: 13px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    border-top: #d0d0d2 solid 1px;
+    padding: 10px 0;
+}
+
+span.copyright {
+    float: right;
+    color: #67676d;
+}
+
+span {
+    box-sizing: border-box;
+}
+li.sign-list-tabs:hover {
+    /* border-bottom-color: red; */
+    border-bottom: 3px solid red;
+    padding-bottom: 4px;
+}
+a.pagelinks.link.link--inline.text-nowrap:hover {
+    color: red;
+}
+
+a.forgot-pass-1:hover {
+    color: red;
 }
 /* ------------------------------------------------------------------------------------------------------- */
 /* THIS IS F1 */
@@ -4667,4 +4806,8 @@ span.driver-photo-details-main-name-1 {
 p.gallery-description.hidden {
     font-family: 'Titillium Web';
     font-style: italic;
+}
+span.eyeIcon.eyeHide {
+    margin-left: -35px;
+    cursor: pointer;
 }

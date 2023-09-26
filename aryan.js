@@ -1,7 +1,7 @@
 var loader = document.getElementById("loader-1");
 
 window.addEventListener("load" , function(){
-    loader.style.display = "none";
+    loader ? loader.style.display = "none" : '';
 })
 // ------------------------------------------------------------------------------------
 const rankingElements = document.getElementsByClassName('ranking');
@@ -186,7 +186,7 @@ const file_text = async (filename) => {
     }
 }
 
-file_text('f1partners.html').then((result) => document.getElementById("default-f1-partners").innerHTML= result)
+file_text('f1partners.html').then((result) => document.getElementById("default-f1-partners") ? document.getElementById("default-f1-partners").innerHTML= result : '') 
 
 
 const slider = document.querySelector('.slider');
@@ -201,19 +201,19 @@ function nextSlide() {
 
 function updateSliderPosition() {
     const offset = slideIndex * -100;
-    slider.style.transform = `translateX(${offset}%)`;
+    slider ? slider.style.transform = `translateX(${offset}%)` : '';
 }
 
 // Change slide every 3 seconds (adjust the interval as needed)
 const slideInterval = setInterval(nextSlide, 3000);
 
 // Pause auto-sliding when the user hovers over the slider
-slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+slider ? slider.addEventListener('mouseenter', () => clearInterval(slideInterval)) : '';
 
 // Resume auto-sliding when the user moves the mouse out of the slider
-slider.addEventListener('mouseleave', () => {
+slider ? slider.addEventListener('mouseleave', () => {
     slideInterval = setInterval(nextSlide, 3000);
-});
+}) : '';
 
   
 
@@ -273,4 +273,22 @@ $( document ).ready(function() {
     
       
 });
+// -------------------------------------------------------------------------------------------------------------------
+// password show
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector("#password-sign");
+console.log('dsvdskjjh')
+togglePassword.addEventListener("click", function () {
+    // toggle the type attribute
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    
+    // toggle the icon
+    this.classList.toggle("fa-eye-slash");
+});
 
+// prevent form submit
+const form = document.querySelector("form");
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+});

@@ -24,6 +24,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -58,18 +59,85 @@
                     <form action="#" id="sign-login-form">
                         <div class="field">
                             <label data-i18n="login.username">Email address</label>
-                            <input type="text" placeholder="Enter your username" data-i18n="[placeholder]login.EnterYourUsername" name="Login" class="txtLogin">
+                            <input type="text" placeholder="Enter your username"
+                                data-i18n="[placeholder]login.EnterYourUsername" name="Login" class="txtLogin">
                         </div>
                         <div class="field-password">
-                            <label data-i18n="login.password">Password</label>
-                            <input type="password" placeholder="Enter your password" data-i18n="[placeholder]login.EnterYourPassword" name="Password" class="txtPassword">
-                            <span class="eyeIcon eyeHide">
-                                <img class="eye-icon-pass" src="images/sign-photo/icon-hide.svg" alt="">
-                            </span>
+                            <label data-i18n="login.password">Password
+                                <input type="password" placeholder="Enter your password"
+                                    data-i18n="[placeholder]login.EnterYourPassword" name="Password"
+                                    class="txtPassword" id="password-sign">
+                                <span class="eyeIcon eyeHide">
+                                    <i class="fa-regular fa-eye-slash" id="togglePassword"></i>
+                                </span>
+                            </label>
+                            <div class="forgot-pass">
+                                <a href="" class="forgot-pass-1">
+                                    Forgotten password?
+                                </a>
+                                <button type="submit" class="btn btn-primary" data-i18n="login.login">Sign In</button>
+                            </div>
+                        </div>
+                        <div class="secondary-actions">
+                            <span data-i18n="login.dontHaveAccountYet" class="dontHaveAccountYet">Don't have an account
+                                yet?</span>
+                            <a href="" data-cta-text="Register with F1" class="pagelinks link link--inline text-nowrap"
+                                data-i18n="login.registerWithF1">Register with F1</a>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footerNav">
+                <div class="sign-f-logo">
+                    <a href="#" class="sign-external">
+                        <img src="images/sign-photo/f1_logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="static-links">
+                    <ul>
+                        <li>
+                            <a data-href-val="#privacy-policy" href="#privacy-policy" class="internalLinks"
+                                data-i18n="footerNav.privacyPolicy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a data-href-val="#subscription-terms" href="#subscription-terms" class="internalLinks"
+                                data-i18n="footerNav.subscription">Subscription</a>
+                        </li>
+                        <li>
+                        <li><a data-href-val="#terms-of-use" href="#terms-of-use" class="internalLinks"
+                                data-i18n="footerNav.termsOfUse">Terms Of Use</a></li>
+                        </li>
+                        <li>
+                            <a data-href-val="#terms-of-use" href="#terms-of-use" class="internalLinks"
+                            data-i18n="footerNav.termsOfUse">FAQS</a></li>
+                        </li>
+                        <li>
+                            <a data-href-val="#terms-of-use" href="#terms-of-use" class="internalLinks"
+                            data-i18n="footerNav.termsOfUse">Cookie preferences</a></li>
+                        </li>
+                    </ul>
+                </div>
+
+               
+            </div>
+            <div class="lanuguage_copyright">
+                <span class="copyright">
+                    © 
+                    <span data-i18n="copyright">2003-2023 Formula One World Championship Limited</span>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- <footer id="default-f1-partners"></footer> -->
+    <script src="aryan.js"></script>
 </body>
+
+</html>
