@@ -4811,3 +4811,124 @@ span.eyeIcon.eyeHide {
     margin-left: -35px;
     cursor: pointer;
 }
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* cookies */
+.cookies-main {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 700px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    /* border-style: solid; */
+    padding: 10px 15px 10px 15px;
+    margin-top: 75px;
+}
+
+.cookies-main-1 {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+.cookies-logo {
+    text-align: center;
+}
+
+.cookies-logo img {
+    width: auto;
+    height: 50px;
+}
+
+.cookies-logo-text {
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    /* font-family: 'Titillium Web'; */
+    padding-top: 10px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+h1.cookies-h1 {
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1;
+}
+
+p.cookies-1 {
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+p.cookies-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+}
+
+h1.cookies-heading-2 {
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p.cookies-p2 {
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.cookies-footer {
+    padding-top: 15px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+button#cookies-b-1 {
+    text-transform: uppercase;
+    padding: 10px 5px 10px 5px;
+    width: 30%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: black;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button#cookies-b-2 {
+    text-transform: uppercase;
+    padding: 10px 5px 10px 5px;
+    width: 30%;
+    border: 2px solid rgb(225, 6, 0);
+    border-radius: 4px;
+    background: rgb(225, 6, 0);
+    color: white;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+}
+button#cookies-b-2:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+button#cookies-b-1:hover {
+    background-color: whitesmoke;
+}
