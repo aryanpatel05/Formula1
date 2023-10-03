@@ -303,27 +303,28 @@ file_text('f1partners.html').then((result) => document.getElementById("default-f
 
 // ------------------------------------------------------------------------------------------------------------------------
 // cookies-box
-// const cookieBox = document.querySelector(".cookies-main"),
-//     buttons = document.querySelectorAll(".cookies-btn-1");
+const cookieBox = document.querySelector(".cookies-main");
+const buttons = document.querySelectorAll(".cookies-btn-1");
 
-// const executeCodes = () => {
-//     console.log(cookieBox)
-//     //if cookie contains codinglab it will be returned and below of this code will not run
-//     if (document.cookie.includes("codinglab")) return;
-//     cookieBox.classList.add("show");
+const executeCodes = () => {
+  // Check if the cookie contains "codinglab"; if yes, return early
+  if (document.cookie.includes("cookieBy=codinglab")) return;
+  cookieBox.classList.add("show");
 
-//     buttons.forEach((button) => {
-//         button.addEventListener("click", () => {
-//             cookieBox.classList.remove("show");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      cookieBox.classList.remove("show");
 
-//             //if button has acceptBtn id
-//             if (button.id == "cookies-b-2") {
-//                 //set cookies for 1 month. 60 = 1 min, 60 = 1 hours, 24 = 1 day, 30 = 30 days
-//                 document.cookie = "cookieBy= codinglab; max-age=" + 60 * 60 * 24 * 30;
-//             }
-//         });
-//     });
-// };
+      // Check if the clicked button has the id "cookies-b-2"
+      if (button.id === "cookies-b-2") {
+        // Set a cookie named "cookieBy" with the value "codinglab" that expires in 30 days
+        const expirationDate = new Date();
+        expirationDate.setTime(expirationDate.getTime() + 30 * 24 * 60 * 60 * 1000);
+        document.cookie = "cookieBy=codinglab; expires=" + expirationDate.toUTCString();
+      }
+    });
+  });
+};
 
-// //executeCodes function will be called on webpage load
-// window.addEventListener("load", executeCodes);
+// Call executeCodes function when the webpage loads
+window.addEventListener("load", executeCodes);
