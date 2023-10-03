@@ -26,7 +26,7 @@ function createMouseOutHandler(pointsElement) {
         pointsElement.style.color = 'black';
     };
 }
-
+// -------------------------------------------------------------------------------------
 
 function updateClock() {
     var now = new Date();
@@ -66,7 +66,7 @@ function initClock() {
     updateClock();
     window.setInterval("updateClock()", 1);
 }
-
+// -----------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -156,23 +156,24 @@ function fetch_menu_content(menu_name) {
             console.error('Error:', error);
         });
 }
+// ----------------------------------------------------------------------------------------
 
 var textWrapper = document.querySelector('.no-margin .letters');
 textWrapper ? textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letters'>$&</span>") : '';
 
-// anime.timeline({loop: true})
-//   .add({
-//     targets: '.no-margin .letters',
-//     rotateY: [-90, 0],
-//     duration: 1300,
-//     delay: (el, i) => 140 * i
-//   }).add({
-//     targets: '.no-margin',
-//     opacity: 0,
-//     duration: 1000,
-//     easing: "easeOutExpo",
-//     delay: 1000
-//   });
+anime.timeline({loop: true})
+  .add({
+    targets: '.no-margin .letters',
+    rotateY: [-90, 0],
+    duration: 1300,
+    delay: (el, i) => 140 * i
+  }).add({
+    targets: '.no-margin',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 
 let htmlCode = 'he';
 
@@ -189,31 +190,31 @@ const file_text = async (filename) => {
 file_text('f1partners.html').then((result) => document.getElementById("default-f1-partners") ? document.getElementById("default-f1-partners").innerHTML = result : '')
 
 
-const slider = document.querySelector('.slider');
-const images = document.querySelectorAll('.slider img');
+// const slider = document.querySelector('.slider');
+// const images = document.querySelectorAll('.slider img');
 
-let slideIndex = 0;
+// let slideIndex = 0;
 
-function nextSlide() {
-    slideIndex = (slideIndex + 1) % images.length;
-    updateSliderPosition();
-}
+// function nextSlide() {
+//     slideIndex = (slideIndex + 1) % images.length;
+//     updateSliderPosition();
+// }
 
-function updateSliderPosition() {
-    const offset = slideIndex * -100;
-    slider ? slider.style.transform = `translateX(${offset}%)` : '';
-}
+// function updateSliderPosition() {
+//     const offset = slideIndex * -100;
+//     slider ? slider.style.transform = `translateX(${offset}%)` : '';
+// }
 
-// Change slide every 3 seconds (adjust the interval as needed)
-const slideInterval = setInterval(nextSlide, 3000);
+// // Change slide every 3 seconds (adjust the interval as needed)
+// const slideInterval = setInterval(nextSlide, 3000);
 
-// Pause auto-sliding when the user hovers over the slider
-slider ? slider.addEventListener('mouseenter', () => clearInterval(slideInterval)) : '';
+// // Pause auto-sliding when the user hovers over the slider
+// slider ? slider.addEventListener('mouseenter', () => clearInterval(slideInterval)) : '';
 
-// Resume auto-sliding when the user moves the mouse out of the slider
-slider ? slider.addEventListener('mouseleave', () => {
-    slideInterval = setInterval(nextSlide, 3000);
-}) : '';
+// // Resume auto-sliding when the user moves the mouse out of the slider
+// slider ? slider.addEventListener('mouseleave', () => {
+//     slideInterval = setInterval(nextSlide, 3000);
+// }) : '';
 
 
 
@@ -244,76 +245,83 @@ slider ? slider.addEventListener('mouseleave', () => {
 //     slideInterval = setInterval(nextSlide, 3000);
 // });
 
-$ (document).ready(function () {
-    $('.slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: false
-    });
+// $(document).ready(function () {
+//     $('.slider').slick({
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 10000,
+//         pauseOnHover: false
+//     });
 
 
-    $('.gallery-text').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: false
-    });
+//     $('.gallery-text').slick({
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 4000,
+//         pauseOnHover: false
+//     });
 
 
-    $('.gallery-text-2').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: false
-    });
+//     $('.gallery-text-2').slick({
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 4000,
+//         pauseOnHover: false
+//     });
 
 
-});
+// });
 // -------------------------------------------------------------------------------------------------------------------
 // password show
-const togglePassword = document.querySelector("#togglePassword");
-const password = document.querySelector("#password-sign");
-console.log('dsvdskjjh')
-togglePassword.addEventListener("click", function () {
-    // toggle the type attribute
-    const type = password.getAttribute("type") === "password" ? "text" : "password";
-    password.setAttribute("type", type);
 
-    // toggle the icon
-    this.classList.toggle("fa-eye-slash");
-});
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password-sign");
 
-// prevent form submit
-const form = document.querySelector("form");
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-});
+    togglePassword ? togglePassword.addEventListener("click", function () {
+        // toggle the type attribute using a ternary operator
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        // toggle the icon
+        this.classList.toggle("fa-eye-slash");
+    }) : '';
+
+    // prevent form submit
+    const form = document.querySelector("form");
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
+    }
+
+
+
 // ------------------------------------------------------------------------------------------------------------------------
 // cookies-box
-const cookieBox = document.querySelector(".cookies-main"),
-    buttons = document.querySelectorAll(".cookies-btn-1");
+// const cookieBox = document.querySelector(".cookies-main"),
+//     buttons = document.querySelectorAll(".cookies-btn-1");
 
-const executeCodes = () => {
-    //if cookie contains codinglab it will be returned and below of this code will not run
-    if (document.cookie.includes("codinglab")) return;
-    cookieBox.classList.add("show");
+// const executeCodes = () => {
+//     console.log(cookieBox)
+//     //if cookie contains codinglab it will be returned and below of this code will not run
+//     if (document.cookie.includes("codinglab")) return;
+//     cookieBox.classList.add("show");
 
-    buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-            cookieBox.classList.remove("show");
+//     buttons.forEach((button) => {
+//         button.addEventListener("click", () => {
+//             cookieBox.classList.remove("show");
 
-            //if button has acceptBtn id
-            if (button.id == "cookies-b-2") {
-                //set cookies for 1 month. 60 = 1 min, 60 = 1 hours, 24 = 1 day, 30 = 30 days
-                document.cookie = "cookieBy= codinglab; max-age=" + 60 * 60 * 24 * 30;
-            }
-        });
-    });
-};
+//             //if button has acceptBtn id
+//             if (button.id == "cookies-b-2") {
+//                 //set cookies for 1 month. 60 = 1 min, 60 = 1 hours, 24 = 1 day, 30 = 30 days
+//                 document.cookie = "cookieBy= codinglab; max-age=" + 60 * 60 * 24 * 30;
+//             }
+//         });
+//     });
+// };
 
-//executeCodes function will be called on webpage load
-window.addEventListener("load", executeCodes);
+// //executeCodes function will be called on webpage load
+// window.addEventListener("load", executeCodes);
