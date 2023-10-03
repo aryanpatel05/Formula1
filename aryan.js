@@ -159,21 +159,23 @@ function fetch_menu_content(menu_name) {
 // ----------------------------------------------------------------------------------------
 
 var textWrapper = document.querySelector('.no-margin .letters');
-textWrapper ? textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letters'>$&</span>") : '';
+textWrapper ? textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letters'>$&</span>") : null;
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.no-margin .letters',
-    rotateY: [-90, 0],
-    duration: 1300,
-    delay: (el, i) => 140 * i
-  }).add({
-    targets: '.no-margin',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+if (textWrapper) {
+  anime.timeline({ loop: true })
+    .add({
+      targets: '.no-margin .letters',
+      rotateY: [-90, 0],
+      duration: 1300,
+      delay: (el, i) => 140 * i
+    }).add({
+      targets: '.no-margin',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+}
 
 let htmlCode = 'he';
 
