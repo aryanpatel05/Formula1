@@ -303,31 +303,31 @@ file_text('f1partners.html').then((result) => document.getElementById("default-f
 
 // ------------------------------------------------------------------------------------------------------------------------
 // cookies-box
-const cookieBox = document.querySelector(".cookies-main");
-const buttons = document.querySelectorAll(".cookies-btn-1");
+// const cookieBox = document.querySelector(".cookies-main");
+// const buttons = document.querySelectorAll(".cookies-btn-1");
 
-const executeCodes = () => {
-  // Check if the cookie contains "codinglab"; if yes, return early
-  if (document.cookie.includes("cookieBy=codinglab")) return;
-  cookieBox.classList.add("show");
+// const executeCodes = () => {
+//   // Check if the cookie contains "codinglab"; if yes, return early
+//   if (document.cookie.includes("cookieBy=codinglab")) return;
+//   cookieBox.classList.add("show");
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      cookieBox.classList.remove("show");
+//   buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//       cookieBox.classList.remove("show");
 
-      // Check if the clicked button has the id "cookies-b-2"
-      if (button.id === "cookies-b-2") {
-        // Set a cookie named "cookieBy" with the value "codinglab" that expires in 30 days
-        const expirationDate = new Date();
-        expirationDate.setTime(expirationDate.getTime() + 30 * 24 * 60 * 60 * 1000);
-        document.cookie = "cookieBy=codinglab; expires=" + expirationDate.toUTCString();
-      }
-    });
-  });
-};
+//       // Check if the clicked button has the id "cookies-b-2"
+//       if (button.id === "cookies-b-2") {
+//         // Set a cookie named "cookieBy" with the value "codinglab" that expires in 30 days
+//         const expirationDate = new Date();
+//         expirationDate.setTime(expirationDate.getTime() + 30 * 24 * 60 * 60 * 1000);
+//         document.cookie = "cookieBy=codinglab; expires=" + expirationDate.toUTCString();
+//       }
+//     });
+//   });
+// };
 
-// Call executeCodes function when the webpage loads
-window.addEventListener("load", executeCodes);
+// // Call executeCodes function when the webpage loads
+// window.addEventListener("load", executeCodes);
 // ---------------------------------------------------------------------------------------------------------
 // sign-alert-box
 
