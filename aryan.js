@@ -357,3 +357,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+// -------------------------------------------------------------------------------------------------------------------
+// for active underline
+const signInLink = document.getElementById("signInLink");
+    const registerLink = document.getElementById("registerLink");
+
+    // Add click event listeners to the links
+    signInLink.addEventListener("click", () => {
+      signInLink.classList.add("active"); // Add the "active" class
+      registerLink.classList.remove("active"); // Remove the "active" class from the other link
+    });
+
+    registerLink.addEventListener("click", () => {
+      registerLink.classList.add("active"); // Add the "active" class
+      signInLink.classList.remove("active"); // Remove the "active" class from the other link
+    });

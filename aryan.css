@@ -5131,3 +5131,10 @@ span.registering {
     font-weight: 100;
     color: white;
 }
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Active link css */
+.active {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-position: under;
+  }
