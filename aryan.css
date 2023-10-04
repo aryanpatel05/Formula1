@@ -4063,8 +4063,11 @@ img.sign-logo {
 }
 
 .sign-nav-1 {
-    width: 14%;
+    width: 20%;
     /* margin: 40px; */
+    padding-top: 41px;
+    padding-left: 45px;
+    padding-bottom: 25px;
 }
 .sign-nav-tabs {
     background: #38383f;
@@ -4293,7 +4296,11 @@ span.copyright {
 }
 
 span {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    /* padding-right: 25px; */
+    /* font-size: 15px; */
+    /* font-weight: 100; */
+    /* color: white; */
 }
 li.sign-list-tabs:hover {
     /* border-bottom-color: red; */
@@ -4810,6 +4817,8 @@ p.gallery-description.hidden {
 span.eyeIcon.eyeHide {
     margin-left: -35px;
     cursor: pointer;
+    position: absolute;
+    margin-top: 15px;
 }
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* cookies */
@@ -4931,4 +4940,194 @@ button#cookies-b-2:hover {
 
 button#cookies-b-1:hover {
     background-color: whitesmoke;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* register-form */
+.register-main {
+    margin: 20px auto;
+    padding: 10px 20px 0px;
+    min-height: 450px;
+}
+
+.registersub-main {
+    max-width: 640px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.register-form {
+    border: solid 1px #15151e;
+    border-radius: 10px;
+}
+
+.register-sub-f {
+    padding: 25px 40px 20px 15px;
+}
+
+.heading-form-reg {
+    margin: 0 0 20px;
+    border-bottom: solid 1px #d0d0d2;
+    padding: 0px 0 5px 0;
+}
+
+h1.head-form {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family: 'Titillium Web';
+    font-style: italic;
+}
+
+.panel-rows-sub {
+    margin-bottom: 15px;
+}
+label.reg-title {
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 0 0px 10px;
+}
+
+select#Title-input {
+    width: 270px;
+    background-color: #fff;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 16px;
+    padding: 3px 10px;
+    height: 54px;
+    border: solid 1px #15151e;
+    border-radius: 10px;
+}
+
+input#FirstName-input {
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 16px;
+    padding: 3px 10px;
+    height: 54px;
+    border: solid 1px #15151e;
+    border-radius: 10px;
+}
+input#LastName-input {
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 16px;
+    padding: 3px 10px;
+    height: 54px;
+    border: solid 1px #15151e;
+    border-radius: 10px;
+}
+
+input#BirthDate-input {
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 16px;
+    padding: 3px 10px;
+    height: 54px;
+    border: solid 1px #15151e;
+    border-radius: 10px;
+}
+
+select#Country-input {
+    width: 270px;
+    background-color: #fff;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 16px;
+    padding: 3px 10px;
+    height: 54px;
+    border: solid 1px #15151e;
+    border-radius: 10px;
+}
+
+input#Email-input {
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 16px;
+    padding: 3px 10px;
+    height: 54px;
+    border: solid 1px #15151e;
+    border-radius: 10px;
+}
+
+input#Password-input {
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Titillium Web';
+    font-style: italic;
+    font-size: 16px;
+    padding: 3px 10px;
+    height: 54px;
+    border: solid 1px #15151e;
+    border-radius: 10px;
+}
+div#password-rule-title {
+    padding-left: 12px;
+    color: #67676d;
+    box-sizing: border-box;
+}
+
+div#password-rule-container {
+    padding-top: 6px;
+    padding-left: 12px;
+}
+
+.password-rule {
+    display: inline-block;
+    padding-right: 24px;
+    padding-bottom: 4px;
+    color: #67676d;
+}
+.panel-rows-sub-1 {
+    display: inline;
+    /* margin-left: 12px; */
+}
+
+label.text-area-register {
+    display: inherit;
+    /* margin-left: 12px; */
+    font-size: 17px;
+}
+.reg-submit-box {margin-right: -15px;margin-left: -15px;text-align: right;}
+
+a.btn.btn-primary.btn-block.registrationform-submit {
+    display: inline-block;
+    margin: auto;
+    width: 18%;
+    border-radius: 7px;
+}
+
+a.pagelinks {
+    display: inline;
+    border-bottom: solid 2px #e00;
+    color: black;
+}
+
+label.policy-register {
+    margin-top: 20px;
+    margin-left: 12px;
+    font-size: 17px;
+}
+
+.panel-rows-1 {margin-top: 30px;margin-left: 12px;}
+
+
+
+footer#sign-footer {
+    margin-top: 35px;
+}
+span.registering {
+    box-sizing: border-box;
+    padding-right: 25px;
+    font-weight: 100;
+    color: white;
 }

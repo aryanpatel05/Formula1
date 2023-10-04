@@ -328,3 +328,21 @@ const executeCodes = () => {
 
 // Call executeCodes function when the webpage loads
 window.addEventListener("load", executeCodes);
+// ---------------------------------------------------------------------------------------------------------
+// sign-alert-box
+
+
+document.getElementById("sign-login-form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    var email = document.getElementById("sign-email").value.trim();
+    var password = document.getElementById("sign-password").value.trim();
+
+    if (email === "" || password === "") {
+        alert("Please fill in both email and password fields.");
+    } else {
+        window.location.href = "http://127.0.0.1:5500/index.html";
+        alert("Welcome back!");
+      
+    }
+});
