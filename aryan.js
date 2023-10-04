@@ -332,17 +332,28 @@ window.addEventListener("load", executeCodes);
 // sign-alert-box
 
 
-document.getElementById("sign-login-form").addEventListener("submit", function(event) {
-    event.preventDefault(); 
+document.addEventListener("DOMContentLoaded", function () {
+    var loginForm = document.getElementById("sign-login-form");
+    if (loginForm) {
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault(); 
 
-    var email = document.getElementById("sign-email").value.trim();
-    var password = document.getElementById("sign-password").value.trim();
+            var emailInput = document.getElementById("sign-email");
+            var passwordInput = document.getElementById("sign-password");
 
-    if (email === "" || password === "") {
-        alert("Please fill in both email and password fields.");
-    } else {
-        window.location.href = "http://127.0.0.1:5500/index.html";
-        alert("Welcome back!");
-      
+            if (emailInput && passwordInput) {
+                var email = emailInput.value.trim();
+                var password = passwordInput.value.trim();
+
+                if (email === "" || password === "") {
+                    alert("Please fill in both email and password fields.");
+                } else {
+                    window.location.href = "http://127.0.0.1:5500/index.html";
+                    alert("Welcome back!");
+                }
+            } else {
+                alert("Email or password input fields not found.");
+            }
+        });
     }
 });
