@@ -376,3 +376,5 @@ const signInLink = document.getElementById("signInLink");
       registerLink.classList.add("active"); // Add the "active" class
       signInLink.classList.remove("active"); // Remove the "active" class from the other link
     });
+// ------------------------------------------------------------------------------------------
+// clock
