@@ -279,27 +279,31 @@ file_text('f1partners.html').then((result) => document.getElementById("default-f
 // -------------------------------------------------------------------------------------------------------------------
 // password show
 
-    const togglePassword = document.querySelector("#togglePassword");
-    const password = document.querySelector("#password-sign");
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector("#sign-password");
 
-    togglePassword ? togglePassword.addEventListener("click", function () {
-        // toggle the type attribute using a ternary operator
-        const type = password.getAttribute("type") === "password" ? "text" : "password";
-        password.setAttribute("type", type);
+if (togglePassword && password) {
+    togglePassword.addEventListener("click", function () {
+        // Toggle the password input's type attribute
+        if (password.getAttribute("type") === "password") {
+            password.setAttribute("type", "text");
+            this.classList.remove("fa-eye");
+            this.classList.add("fa-eye-slash");
+        } else {
+            password.setAttribute("type", "password");
+            this.classList.remove("fa-eye-slash");
+            this.classList.add("fa-eye");
+        }
+    });
+}
 
-        // toggle the icon
-        this.classList.toggle("fa-eye-slash");
-    }) : '';
-
-    // prevent form submit
-    const form = document.querySelector("form");
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-        });
-    }
-
-
+// Prevent form submission
+const form = document.querySelector("form");
+if (form) {
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+    });
+}
 
 // ------------------------------------------------------------------------------------------------------------------------
 // cookies-box
