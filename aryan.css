@@ -85,7 +85,11 @@
     text-align: center;
 }
 
-
+.nav-menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
 
 #navbar {
     position: relative;
@@ -97,7 +101,7 @@
 #navbar ul {
     display: flex;
     width: 100%;
-    padding: 0px 10px 0px 0px;
+    padding: 0px 10px 0px 10px;
     justify-content: space-between;
     color: white;
     flex-wrap: wrap;
@@ -5434,3 +5438,162 @@ span.registering {
     text-decoration-color: red;
     text-underline-position: under;
 }
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* drivers-full-standings */
+.full-standings-main {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.resultsarchive-wrapper {
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.Schedule-sub-2-standings {
+
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    justify-content: space-between;
+    margin: auto;
+    /* letter-spacing: 69px; */
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+    
+  
+    #navbar{
+        /* width: 13px; */
+        box-sizing: border-box;
+        max-width: 768px;
+        position: absolute;
+        /* display: flex; */
+        /* left: 2%; */
+        /* width: 280px; */
+        /* height: 29vh; */
+    }
+    #navbar ul{
+        flex-direction: column;
+        padding-top: 15px;
+        padding-left: 10px;
+        
+    }
+    .datetime{
+        display: none;
+    }
+    .nav-menu-icon{
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 5px;
+    }
+   #logo{position: absolute;right: 20%;left: 218px;top: 7px;width: 290%;}
+   #navbar ul li{
+    display: none;
+   }
+
+   .driver-stand{
+    padding: 61px 10px 0 10px;
+   }
+
+   .top-1{
+    display: none;
+   }
+   .top-1-1{width: 64%;padding-left: 83px;padding-top: 43px;}
+
+   li.ranking{width: 80%;letter-spacing: 0.2px;padding: 5px 15px;margin: 0px auto 5px;}
+   span.teamn{
+    padding-left: 14px;
+   }
+   span.podiumright{
+    margin-top: 8px;
+   }
+
+   .btn{
+    width: 35%;
+   }
+   #default-f1-partners{width: 100%;max-width: 768px;margin-top: 10px;}
+
+   ul.coloum1{
+    width: 100%;
+    max-width: 768px;
+   }
+
+   .coloum1 img{
+    width: 90px;
+   }
+   ul.coloum2{width: 100%;max-width: 768px;}
+   ul.coloum3{
+    width: 100%;
+    max-width: 768px;
+   }
+   .paramount img{
+    width: 100px;
+   }
+   .workday img{
+    width: 90px;
+   }
+   .alphaturi img{
+    width: 90px;
+   }
+   .BBS img{
+    width: 90px;
+   }
+   .TATA img{
+    width: 90px;
+   }
+   .puma img{
+    width: 90px;
+   }
+   .Lastcoloum-1{
+    width: 100%;
+    max-width: 768px;
+   }
+   .lastcoloum{
+    width: 90%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1.2px;
+    align-items: baseline;
+    text-align: left;
+    padding: 0;
+   }
+   .standings{
+    margin: 20px 0 0 0;
+   }
+   .f1-footer-bottom-1{
+    width: 100%;
+    max-width: 768px;
+   }
+   
+   ul.footer-bottom-sub{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+   }
+   hr.bottom-line{
+    width: 100%;
+    max-width: 768px;
+   }
+   .row-bottom{
+    width: 100%;
+    max-width: 768px;
+    padding: 0 10px 0 10px;
+   }
+   
+
+}
+
+
+

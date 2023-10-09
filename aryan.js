@@ -364,17 +364,31 @@ document.addEventListener("DOMContentLoaded", function () {
 // -------------------------------------------------------------------------------------------------------------------
 // for active underline
 const signInLink = document.getElementById("signInLink");
-    const registerLink = document.getElementById("registerLink");
+const registerLink = document.getElementById("registerLink");
 
-    // Add click event listeners to the links
-    signInLink.addEventListener("click", () => {
-      signInLink.classList.add("active"); // Add the "active" class
-      registerLink.classList.remove("active"); // Remove the "active" class from the other link
-    });
+// Check if elements exist before adding event listeners
+if (signInLink && registerLink) {
+  signInLink.addEventListener("click", () => {
+    signInLink.classList.add("active");
+    registerLink.classList.remove("active");
+  });
 
-    registerLink.addEventListener("click", () => {
-      registerLink.classList.add("active"); // Add the "active" class
-      signInLink.classList.remove("active"); // Remove the "active" class from the other link
-    });
+  registerLink.addEventListener("click", () => {
+    registerLink.classList.add("active");
+    signInLink.classList.remove("active");
+  });
+} else {
+  console.error("One or both elements not found.");
+}
+
+
 // ------------------------------------------------------------------------------------------
-// clock
+// menu-responsive
+const menuIcon = document.getElementById('menu-icon-res');
+const  navmenu= document.getElementById('nav-resp-menu');
+
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('visible');
+});
+
