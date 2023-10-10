@@ -4896,7 +4896,7 @@ p.tif-box-p-1-box-4-2 {
     /* height: 100vh; */
     max-width: 1300px;
     margin: auto;
-    padding: 20px;
+    padding: 25px;
 }
 
 .tif-word-box-5-1 {
@@ -5607,7 +5607,7 @@ span.registering {
     border-top-right-radius: 10px;
    }
    h1.no-margin{
-    font-size: 50px;
+    font-size: 45px;
    }
    .driver-cont-1{
     width: 100%;
@@ -5692,7 +5692,36 @@ span.registering {
    .driver-full-list-sub{
     padding: 10px 20px 20px 20px;
    }
-
+   .this-is-f1-main-sub{
+    width: 100%;
+    max-width: 768px;
+   }
+   .tif-box-1{
+    flex-direction: column;
+    margin-bottom: 25px;
+    /* border: 2px solid black; */
+   }
+   .tif-box-sub-1{width: 100%;padding-top: 10px;padding-bottom: 10px;margin-top: -4px;}
+   .tif-box-sub-2{
+    width: 100%;
+   }
+   .tif-box-sub-1-1{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -4px;
+   }
+   .tif-box-sub-1-2{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
+   .tif-box-sub-1-4{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -4px;
+   }
 
 }
 
