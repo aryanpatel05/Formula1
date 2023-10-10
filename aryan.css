@@ -3482,7 +3482,7 @@ span.f1-nav_item-sub:hover {
 }
 
 p.drivers-cont-sub-2 {
-    max-width: 45%;
+    max-width: 85%;
     color: black;
     letter-spacing: 0.5px;
     font-family: 'Titillium Web';
@@ -5479,8 +5479,10 @@ span.registering {
         position: absolute;
         /* display: flex; */
         /* left: 2%; */
+        top: 0;
         /* width: 280px; */
-        /* height: 29vh; */
+        height: 4vh;
+        width: 100%;
     }
     #navbar ul{
         flex-direction: column;
@@ -5497,7 +5499,7 @@ span.registering {
         left: 10px;
         top: 5px;
     }
-   #logo{position: absolute;right: 20%;left: 218px;top: 7px;width: 290%;}
+   #logo{position: absolute;right: 20%;left: 218px;top: 7px;width: 10%;}
    #navbar ul li{
     display: none;
    }
@@ -5591,7 +5593,43 @@ span.registering {
     max-width: 768px;
     padding: 0 10px 0 10px;
    }
-   
+   .Schedule-sub{
+    width: 100%;
+    max-width: 768px;
+    padding: 0px 20px 0px 20px;
+   }
+   .Schedule-sub-2{
+    width: 100%;
+    max-width: 768px;
+    padding-top: 0;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+   }
+   h1.no-margin{
+    font-size: 50px;
+   }
+   .driver-cont-1{
+    width: 100%;
+    max-width: 768px;
+   }
+   .driver-cont-sub{
+    margin-top: 10px;
+    padding: 10px 20px 20px 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+   }
+   .teams-main-container{
+    width: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
+   }
+   .teams-sub-cont-1{
+    box-sizing: border-box;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    grid-gap: 15px;
+   }
+
 
 }
 
