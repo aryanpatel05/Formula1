@@ -5722,6 +5722,9 @@ span.registering {
     padding-bottom: 10px;
     margin-top: -4px;
    }
+   .tif-grid{
+    overflow: hidden;
+   }
 
 }
 
