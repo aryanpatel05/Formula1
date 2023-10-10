@@ -5681,6 +5681,17 @@ span.registering {
    .next-rounds-schedule-1{
     padding: 0px 20px 20px 20px;
    }
+   .driver-full-list{
+    width: 100%;
+    max-width: 768px;
+   }
+   .driver-full-list-sub-1{
+    grid-template-columns: 1fr;
+    gap: 10px;
+   }
+   .driver-full-list-sub{
+    padding: 10px 20px 20px 20px;
+   }
 
 
 }
