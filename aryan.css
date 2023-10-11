@@ -5725,6 +5725,43 @@ span.registering {
    .tif-grid{
     overflow: hidden;
    }
+   .sign-main{
+    width: 100%;
+    max-width: 768px;
+   }
+   .sign-nav-1{
+    padding: 15px 10px 10px 20px;
+    width: 17%;
+   }
+   button.btn.btn-primary{
+    width: 27%;
+   }
+   footer#sign-footer{
+    width: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
+    padding: 0px 20px 8px 20px;
+   }
+   .static-links{
+    /* display: none; */
+    padding-top: 10px;
+   }
+   .footer-wrapper{
+    border-top-right-radius: 15px;
+    padding-bottom: 0;
+   }
+   .footerNav{display: flex;flex-direction: column;}
+   .static-links ul li{
+   display: block;
+   }
+   .sign-external img{
+    width: 100px;
+   }
+   span.copyright{
+    float: none;
+    display: block;
+    text-align: center;
+   }
 
 }
 
