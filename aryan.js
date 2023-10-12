@@ -303,29 +303,37 @@ if (signInLink && registerLink) {
 
 
 const slider = document.querySelector('.slider');
-    const images = document.querySelectorAll('.slider img');
-    let slideIndex = 0;
-    let slideInterval;
+const images = document.querySelectorAll('.slider img');
+let slideIndex = 0;
+let slideInterval;
 
-    function nextSlide() {
-        slideIndex = (slideIndex + 1) % images.length;
-        updateSliderPosition();
-    }
+function nextSlide() {
+    slideIndex = (slideIndex + 1) % (images ? images.length : 0);
+    updateSliderPosition();
+}
 
-    function updateSliderPosition() {
+function updateSliderPosition() {
+    if (slider) {
         const offset = slideIndex * -100;
         slider.style.transform = `translateX(${offset}%)`;
     }
+}
 
-    function pauseSlider() {
-        clearInterval(slideInterval);
-    }
+function pauseSlider() {
+    clearInterval(slideInterval);
+}
 
-    function resumeSlider() {
+function resumeSlider() {
+    if (slideInterval) {
         slideInterval = setInterval(nextSlide, 3000);
     }
+}
 
+if (slider) {
     slideInterval = setInterval(nextSlide, 3000);
-
+    
     slider.addEventListener('mouseenter', pauseSlider);
     slider.addEventListener('mouseleave', resumeSlider);
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// email notification
