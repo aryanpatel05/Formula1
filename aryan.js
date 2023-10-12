@@ -373,7 +373,7 @@ let body = "Welcome Back";
         Subject : "New f1-registration",
         Body : body
     }).then(
-      message => alert("Registration Successful")
+      message => alert("Successfully Sign In in f1 ")
     );
 }
 
