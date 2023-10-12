@@ -162,19 +162,19 @@ var textWrapper = document.querySelector('.no-margin .letters');
 textWrapper ? textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letters'>$&</span>") : null;
 
 if (textWrapper) {
-  anime.timeline({ loop: true })
-    .add({
-      targets: '.no-margin .letters',
-      rotateY: [-90, 0],
-      duration: 1300,
-      delay: (el, i) => 140 * i
-    }).add({
-      targets: '.no-margin',
-      opacity: 0,
-      duration: 1000,
-      easing: "easeOutExpo",
-      delay: 1000
-    });
+    anime.timeline({ loop: true })
+        .add({
+            targets: '.no-margin .letters',
+            rotateY: [-90, 0],
+            duration: 1300,
+            delay: (el, i) => 140 * i
+        }).add({
+            targets: '.no-margin',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
 }
 
 let htmlCode = 'he';
@@ -255,8 +255,8 @@ if (form) {
 document.addEventListener("DOMContentLoaded", function () {
     var loginForm = document.getElementById("sign-login-form");
     if (loginForm) {
-        loginForm.addEventListener("submit", function(event) {
-            event.preventDefault(); 
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
 
             var emailInput = document.getElementById("sign-email");
             var passwordInput = document.getElementById("sign-password");
@@ -283,23 +283,23 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const signInLink = document.getElementById("signInLink");
     const registerLink = document.getElementById("registerLink");
-  
+
     // Check if elements exist before adding event listeners
     if (signInLink && registerLink) {
-      signInLink.addEventListener("click", () => {
-        signInLink.classList.add("active");
-        registerLink.classList.remove("active");
-      });
-  
-      registerLink.addEventListener("click", () => {
-        registerLink.classList.add("active");
-        signInLink.classList.remove("active");
-      });
+        signInLink.addEventListener("click", () => {
+            signInLink.classList.add("active");
+            registerLink.classList.remove("active");
+        });
+
+        registerLink.addEventListener("click", () => {
+            registerLink.classList.add("active");
+            signInLink.classList.remove("active");
+        });
     } else {
-    //   console.error("One or both elements not found.");
+        //   console.error("One or both elements not found.");
     }
-  });
-  
+});
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // for image slider
@@ -340,3 +340,23 @@ if (slider) {
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // email notification
+function SendEmail() {
+    let title = document.getElementById("Title-input").value;
+    let firstname = document.getElementById("FirstName-input").value;
+    let lastname = document.getElementById("LastName-input").value;
+    let email = document.getElementById("Email-input").value;
+    let dateofbirth = document.getElementById("BirthDate-input").value;
+    let country = document.getElementById("Country-input").value;
+    
+let body = "Name:" + title + " "+firstname +" "+ lastname + "<br/> Email:" + email + "<br/> Date of birth:" + dateofbirth + "<br/> Country:" + country;
+
+    Email.send({
+        SecureToken : "0bfc6237-1400-4d03-97a3-7de8e95629e6",
+        To : 'aryanpatel9279@gmail.com',
+        From : "aryanpatel9279@gmail.com",
+        Subject : "New f1-registration",
+        Body : body
+    }).then(
+      message => alert("Registration Successful")
+    );
+}
