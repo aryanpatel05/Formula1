@@ -6083,7 +6083,10 @@ span.registering {
     span.copyright{
         font-size: 10px;
     }
-  
+    a.btn.btn-primary.btn-block.registrationform-submit{
+        width: 30%;
+    }
+   
 }
 
 
