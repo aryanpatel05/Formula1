@@ -597,9 +597,7 @@ ul.coloum2 {
     justify-content: center;
     padding: 0px 0px 10px;
     border-bottom: 1px solid rgb(56, 56, 63);
-
     list-style: none;
-
 }
 
 ul.coloum3 {
@@ -5791,7 +5789,96 @@ span.registering {
         max-width: 480px;
         box-sizing: border-box;
     }
-    .heading-sub{width: 100%;padding: 5px 10px 5px 0px;}
+    .heading-sub{width: 100%;padding: 6px 0px 0px 0px;}
+    .heading-sub img{
+        width: 80%;
+    }
+    span.h{
+        font-size: 25px;
+        padding-left: 0;
+    }
+    .top-1-1{
+        padding-left: 37px;
+        padding-top: 0;
+        width: 75%;
+    }
+    li.ranking{
+        width: 80%;
+        padding: 5px 5px;
+    }
+    .podium-rank{
+        font-size: 10px;
+    }
+    span.team-color{
+        height: 12px;
+        margin: 2px 5px 0 5px;
+        width: 3px;
+    }
+    span.firstn{font-size: 15px;}
+    span.lastn{
+        font-size: 13px;
+    }
+    span.teamn{
+        /* display: none; */
+        font-size: 10px;
+        padding-left: 9px;
+        padding-top: 5px;
+    }
+    span.points{
+        font-size: 8px;
+    }
+    span.podiumright{
+        margin-top: 2px;
+    }
+    .btn{
+        width: 50%;
+        padding: 12px 0px 13px 19px;
+    }
+    .row{
+        padding: 10px 5px 7px 5px;
+    }
+    .coloum1 img{
+        width: 60px;
+    }
+    .paramount img{width: 85px;}
+    ul.coloum2{
+        width: 100%;
+        max-width: 480px;
+    }
+    .lenovo img{
+        width: 80px;
+    }
+    .Ferrari img{
+        width: 80px;
+    }
+    .liqui-moly img{
+        width: 75px;
+    }
+    ul.coloum3{
+        width: 100%;
+        max-width: 480px;
+    }
+    .workday img{
+        width: 60px;
+    }
+    .alphaturi img{
+        width: 65px;
+    }
+    .BBS img{
+        width: 65px;
+    }
+    .TATA img{width: 65px;}
+    .puma img{
+        width: 65px;
+    }
+    .Lastcoloum-1{width: 100%;max-width: 480px;}
+    .lastcoloum{
+        max-width: 480px;
+        margin: 10px 5px 0 15px;
+    }
+    ul.footer-bottom-sub{
+        padding: 10px 20px 10px 10px;
+    }
 }
 
 
