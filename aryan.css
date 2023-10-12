@@ -5879,6 +5879,42 @@ span.registering {
     ul.footer-bottom-sub{
         padding: 10px 20px 10px 10px;
     }
+    .Schedule-sub{
+        width: 100%;
+        max-width: 480px;
+        padding: 12px 20px 0 20px;
+    }
+    h1.no-margin{
+        font-size: 30px;
+    }
+    .driver-cont-1{
+        width: 100%;
+        max-width: 480px;
+    }
+    p.drivers-cont-sub-2{
+        font-size: 10px;
+        max-width: 100%;
+    }
+    .teams-main-container{
+        width: 100%;
+        max-width: 480px;
+    }
+    .teams-listing-tdrivers{
+        display: block;
+    }
+    .teams-listing-fdriver{
+        width: 100%;
+        max-width: 100%;
+        /* padding-top: 15px; */
+        margin-top: 10px;
+    }
+    .teams-listing-rank{
+        font-size: 2rem;
+    }
+    .teams-listing-upper{
+        font-size: 23px;
+    }
+  
 }
 
 
