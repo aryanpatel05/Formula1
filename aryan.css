@@ -146,7 +146,7 @@
 
 .datetime {
     color: rgb(255, 255, 255);
-    padding: 5px 0;
+    /* padding: 5px 0; */
     background: rgb(16, 16, 30);
     font-family: "Segoe UI", sans-serif;
     width: 250px;
@@ -158,7 +158,7 @@
 
 .datetime:hover {
     background: red;
-    box-shadow: rgb(46, 148, 227) 0px 0px 30px;
+    /* box-shadow: rgb(46, 148, 227) 0px 0px 30px; */
     border: 2px solid black;
     cursor: pointer;
     /* box-shadow: rgb(46, 148, 227) 0px 0px 30px; */
@@ -168,18 +168,21 @@
 }
 
 .date {
-    font-size: 11px;
+    font-size: 8px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
     font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .time {
-    font-size: 26px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Titillium Web';
+    font-style: italic;
 }
 
 .time span:not(:last-child) {
@@ -191,7 +194,7 @@
 }
 
 .time span:last-child {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 0px;
