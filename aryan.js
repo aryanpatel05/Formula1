@@ -376,3 +376,4 @@ let body = "Welcome Back";
       message => alert("Registration Successful")
     );
 }
+
