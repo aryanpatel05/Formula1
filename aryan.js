@@ -279,24 +279,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // -------------------------------------------------------------------------------------------------------------------
 // for active underline
-const signInLink = document.getElementById("signInLink");
-const registerLink = document.getElementById("registerLink");
-
-// Check if elements exist before adding event listeners
-if (signInLink && registerLink) {
-  signInLink.addEventListener("click", () => {
-    signInLink.classList.add("active");
-    registerLink.classList.remove("active");
+// Wrap everything in a DOMContentLoaded event listener to ensure the page is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    const signInLink = document.getElementById("signInLink");
+    const registerLink = document.getElementById("registerLink");
+  
+    // Check if elements exist before adding event listeners
+    if (signInLink && registerLink) {
+      signInLink.addEventListener("click", () => {
+        signInLink.classList.add("active");
+        registerLink.classList.remove("active");
+      });
+  
+      registerLink.addEventListener("click", () => {
+        registerLink.classList.add("active");
+        signInLink.classList.remove("active");
+      });
+    } else {
+    //   console.error("One or both elements not found.");
+    }
   });
-
-  registerLink.addEventListener("click", () => {
-    registerLink.classList.add("active");
-    signInLink.classList.remove("active");
-  });
-} else {
-  console.error("One or both elements not found.");
-}
-
+  
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // for image slider
@@ -331,7 +334,7 @@ function resumeSlider() {
 
 if (slider) {
     slideInterval = setInterval(nextSlide, 3000);
-    
+
     slider.addEventListener('mouseenter', pauseSlider);
     slider.addEventListener('mouseleave', resumeSlider);
 }
