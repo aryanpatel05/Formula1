@@ -252,31 +252,31 @@ if (form) {
 // sign-alert-box
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    var loginForm = document.getElementById("sign-login-form");
-    if (loginForm) {
-        loginForm.addEventListener("submit", function (event) {
-            event.preventDefault();
+// document.addEventListener("DOMContentLoaded", function () {
+//     var loginForm = document.getElementById("sign-login-form");
+//     if (loginForm) {
+//         loginForm.addEventListener("submit", function (event) {
+//             event.preventDefault();
 
-            var emailInput = document.getElementById("sign-email");
-            var passwordInput = document.getElementById("sign-password");
+//             var emailInput = document.getElementById("sign-email");
+//             var passwordInput = document.getElementById("sign-password");
 
-            if (emailInput && passwordInput) {
-                var email = emailInput.value.trim();
-                var password = passwordInput.value.trim();
+//             if (emailInput && passwordInput) {
+//                 var email = emailInput.value.trim();
+//                 var password = passwordInput.value.trim();
 
-                if (email === "" || password === "") {
-                    alert("Please fill in both email and password fields.");
-                } else {
-                    window.location.href = "http://127.0.0.1:5500/index.html";
-                    alert("Welcome back!");
-                }
-            } else {
-                alert("Email or password input fields not found.");
-            }
-        });
-    }
-});
+//                 if (email === "" || password === "") {
+//                     alert("Please fill in both email and password fields.");
+//                 } else {
+//                     window.location.href = "http://127.0.0.1:5500/index.html";
+//                     alert("Welcome back!");
+//                 }
+//             } else {
+//                 alert("Email or password input fields not found.");
+//             }
+//         });
+//     }
+// });
 // -------------------------------------------------------------------------------------------------------------------
 // for active underline
 // Wrap everything in a DOMContentLoaded event listener to ensure the page is fully loaded
@@ -352,7 +352,23 @@ let body = "Name:" + title + " "+firstname +" "+ lastname + "<br/> Email:" + ema
 
     Email.send({
         SecureToken : "0bfc6237-1400-4d03-97a3-7de8e95629e6",
-        To : 'aryanpatel9279@gmail.com',
+        To : 'dalsaniyaankit557@gmail.com',
+        From : "aryanpatel9279@gmail.com",
+        Subject : "New f1-registration",
+        Body : body
+    }).then(
+      message => alert("Registration Successful")
+    );
+}
+function signemail(){
+    let SignEmail = document.getElementById("sign-email").value;
+    let signPassword = document.getElementById("sign-password").value;
+let body = "Welcome Back";
+    
+    console.log(SignEmail)
+    Email.send({
+        SecureToken : "0bfc6237-1400-4d03-97a3-7de8e95629e6",
+        To : SignEmail,
         From : "aryanpatel9279@gmail.com",
         Subject : "New f1-registration",
         Body : body

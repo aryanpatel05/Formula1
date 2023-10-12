@@ -5773,6 +5773,28 @@ span.registering {
    
 
 }
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* for mobile */
+@media only screen and (max-width: 480px) {
+
+    #navbar{
+        width: 100%;
+        max-width: 480px;
+    }
+    #logo{
+        left: 143px;
+        top: 2px;
+        width: 13%;
+    }
+    .heading-main{
+        width: 100%;
+        max-width: 480px;
+        box-sizing: border-box;
+    }
+    .heading-sub{width: 100%;padding: 5px 10px 5px 0px;}
+}
+
+
 
 
 
