@@ -6020,6 +6020,25 @@ span.registering {
         line-height: 0;
         margin-bottom: 5px;
     }
+    a.forgot-pass-1{
+    display: block;
+    /* margin-right: 43px; */
+    margin-top: 15px;
+    font-size: 15px;
+    }
+    button.btn.btn-primary{
+        width: 45%;
+        /* margin-left: 60px; */
+    }
+    .secondary-actions{
+        display: contents;
+    }
+    span.dontHaveAccountYet{
+        font-size: 12px;
+    }
+    a.pagelinks.link.link--inline.text-nowrap{
+        font-size: 12px;
+    }
   
 }
 
