@@ -5245,7 +5245,7 @@ button#cookies-b-1:hover {
 }
 
 .register-sub-f {
-    padding: 25px 40px 20px 15px;
+    padding: 25px 20px 20px 15px;
 }
 
 .heading-form-reg {
@@ -5274,7 +5274,7 @@ label.reg-title {
 }
 
 select#Title-input {
-    width: 270px;
+    width: 100%;
     background-color: #fff;
     font-family: 'Titillium Web';
     font-style: italic;
@@ -5295,6 +5295,7 @@ input#FirstName-input {
     height: 54px;
     border: solid 1px #15151e;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 input#LastName-input {
@@ -5307,6 +5308,7 @@ input#LastName-input {
     height: 54px;
     border: solid 1px #15151e;
     border-radius: 10px;
+    /* box-sizing: border-box; */
 }
 
 input#BirthDate-input {
@@ -5322,7 +5324,7 @@ input#BirthDate-input {
 }
 
 select#Country-input {
-    width: 270px;
+    width: 100%;
     background-color: #fff;
     font-family: 'Titillium Web';
     font-style: italic;
@@ -6038,6 +6040,48 @@ span.registering {
     }
     a.pagelinks.link.link--inline.text-nowrap{
         font-size: 12px;
+    }
+    .registersub-main{
+        padding: 0 10px 0 10px;
+    }
+    h1.head-form{
+        font-size: 25px;
+    }
+    select#Title-input{
+    }
+    label.reg-title{
+        font-size: 15px;
+    }
+    select#Country-input{
+        /* width: 225px; */
+        box-sizing: border-box;
+    }
+    input#BirthDate-input{
+        box-sizing: border-box;
+    }
+    input#LastName-input{
+        box-sizing: border-box;
+    }
+    input#Email-input{
+        box-sizing: border-box;
+    }
+    input#Password-input{
+        box-sizing: border-box;
+    }
+    label.policy-register{
+    font-size: 11px;
+    }
+    label.text-area-register{
+        font-size: 12px;
+    }
+    div#password-rule-title{
+        font-size: 12px;
+    }
+    div#password-rule-container{
+        font-size: 12px;
+    }
+    span.copyright{
+        font-size: 10px;
     }
   
 }
