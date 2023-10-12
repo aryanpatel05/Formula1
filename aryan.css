@@ -5885,7 +5885,7 @@ span.registering {
         padding: 12px 20px 0 20px;
     }
     h1.no-margin{
-        font-size: 30px;
+        font-size: 28px;
     }
     .driver-cont-1{
         width: 100%;
@@ -5913,6 +5913,112 @@ span.registering {
     }
     .teams-listing-upper{
         font-size: 23px;
+    }
+    .nav-menu-icon{
+        font-size: 10px;
+    }
+    .cont-1-2 p{
+        font-size: 12px;
+    }
+    p.tif-box-p{
+        font-size: 20px;
+        line-height: 1;
+    }
+    p.tif-box-p-2{
+        font-size: 20px;
+        line-height: 2;
+    }
+    p.tif-box-p-1{
+        font-size: 20px;
+        line-height: 1;
+    }
+    .tif-word-1{
+        font-size: 20px;
+    }
+    .tif-word-1-1{
+        font-size: 55px;
+    }
+    .tif-word-3{
+        font-size: 20px;
+    }
+    .tif-word-4{
+        font-size: 20px;
+    }
+    .tif-word-1-1-2{
+        font-size: 55px;
+    }
+    .tif-word-3-2{
+        font-size: 20px;
+        padding-top: 24px;
+    }
+    .tif-word-sub-1{
+        font-size: 20px;
+    }
+    .tif-word-3-1{
+        font-size: 20px;
+    }
+    .tif-word-4-1{
+        font-size: 20px;
+    }
+    .tif-word-2-1{
+        padding-top: 5px;
+    }
+    .tif-word-box-4{
+        font-size: 55px;
+    }
+    .tif-word-box-4-1{
+        font-size: 20px;
+        padding-top: 25px;
+    }
+    p.tif-box-p--box-4{
+        font-size: 20px;
+        padding-left: 58px;
+    }
+    p.tif-box-p-1-box-4{
+        font-size: 55px;
+        padding-left: 0;
+    }
+    p.tif-box-p-1-box-4-2{
+        font-size: 20px;
+        padding-top: 24px;
+        padding-left: 5px;
+    }
+    .flex-box-4-1{
+        margin-top: -12px;
+    }
+    .tif-word-box-5{
+        font-size: 55px;
+        padding-left: 0;
+    }
+    .tif-word-box-5-1{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    .tif-word-box-6{
+        font-size: 55px;
+        padding-left: 0;
+    }
+    .tif-word-box-6-1{
+        font-size: 22px;
+        padding-left: 5px;
+    }
+    p.tif-box-7-2{
+        font-size: 45px;
+        line-height: 1;
+        margin-top: 7px;
+    }
+    p.tif-box-7-1{
+        font-size: 20px;
+        line-height: 2;
+    }
+    p.tif-box-8{
+    margin-top: 7px;
+    margin-bottom: 9px;
+    }
+    p.tif-box-9-1{
+        font-size: 20px;
+        line-height: 0;
+        margin-bottom: 5px;
     }
   
 }
