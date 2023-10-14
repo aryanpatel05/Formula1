@@ -352,7 +352,7 @@ let body = "Name:" + title + " "+firstname +" "+ lastname + "<br/> Email:" + ema
 
     Email.send({
         SecureToken : "0bfc6237-1400-4d03-97a3-7de8e95629e6",
-        To : 'dalsaniyaankit557@gmail.com',
+        To : 'aryanpatel9279@gmail.com',
         From : "aryanpatel9279@gmail.com",
         Subject : "New f1-registration",
         Body : body
@@ -363,7 +363,7 @@ let body = "Name:" + title + " "+firstname +" "+ lastname + "<br/> Email:" + ema
 function signemail(){
     let SignEmail = document.getElementById("sign-email").value;
     let signPassword = document.getElementById("sign-password").value;
-let body = "Welcome Back";
+let body = "Successfully Sign In in f1";
     
     console.log(SignEmail)
     Email.send({
@@ -373,7 +373,7 @@ let body = "Welcome Back";
         Subject : "New f1-registration",
         Body : body
     }).then(
-      message => alert("Successfully Sign In in f1 ")
+      message => alert("welcome back")
     );
 }
 
