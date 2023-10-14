@@ -5311,7 +5311,7 @@ input#LastName-input {
     height: 54px;
     border: solid 1px #15151e;
     border-radius: 10px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 input#BirthDate-input {
@@ -5324,6 +5324,7 @@ input#BirthDate-input {
     height: 54px;
     border: solid 1px #15151e;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 select#Country-input {
@@ -5348,6 +5349,7 @@ input#Email-input {
     height: 54px;
     border: solid 1px #15151e;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 input#Password-input {
@@ -5360,6 +5362,7 @@ input#Password-input {
     height: 54px;
     border: solid 1px #15151e;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 div#password-rule-title {
