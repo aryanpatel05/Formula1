@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Russo+One&display=swap"
         rel="stylesheet">
@@ -32,7 +32,10 @@
     <div class="sign-main">
         <div class="sign-nav">
             <div class="sign-nav-1">
-                <img src="images/sign-photo/f1_logo.svg" alt="F1.com">
+                <a href="/index.html">
+                    <img src="images/sign-photo/f1_logo.svg" alt="F1.com">
+                </a>
+
             </div>
         </div>
     </div>
@@ -60,14 +63,14 @@
                     <form action="#" id="sign-login-form">
                         <div class="field">
                             <label data-i18n="login.username">Email address</label>
-                            <input type="text" placeholder="Enter your username"
-                               id="sign-email" data-i18n="[placeholder]login.EnterYourUsername" name="Login" class="txtLogin">
+                            <input type="text" placeholder="Enter your username" id="sign-email"
+                                data-i18n="[placeholder]login.EnterYourUsername" name="Login" class="txtLogin">
                         </div>
                         <div class="field-password">
                             <label data-i18n="login.password">Password
                                 <input type="password" placeholder="Enter your password"
-                                    data-i18n="[placeholder]login.EnterYourPassword" name="Password"
-                                    id="sign-password" class="txtPassword" id="password-sign">
+                                    data-i18n="[placeholder]login.EnterYourPassword" name="Password" id="sign-password"
+                                    class="txtPassword" id="password-sign">
                                 <span class="eyeIcon eyeHide">
                                     <i class="fa-regular fa-eye-slash" id="togglePassword"></i>
                                 </span>
@@ -76,13 +79,15 @@
                                 <a href="" class="forgot-pass-1">
                                     Forgotten password?
                                 </a>
-                                <button type="submit" class="btn btn-primary" data-i18n="login.login" onclick="signemail()">Sign In</button>
+                                <button type="submit" class="btn btn-primary" data-i18n="login.login"
+                                    onclick="signemail()">Sign In</button>
                             </div>
                         </div>
                         <div class="secondary-actions">
                             <span data-i18n="login.dontHaveAccountYet" class="dontHaveAccountYet">Don't have an account
                                 yet?</span>
-                            <a href="/register.html" data-cta-text="Register with F1" class="pagelinks link link--inline text-nowrap"
+                            <a href="/register.html" data-cta-text="Register with F1"
+                                class="pagelinks link link--inline text-nowrap"
                                 data-i18n="login.registerWithF1">Register with F1</a>
                         </div>
                     </form>
@@ -117,20 +122,22 @@
                         </li>
                         <li>
                             <a data-href-val="#terms-of-use" href="#terms-of-use" class="internalLinks"
-                            data-i18n="footerNav.termsOfUse">FAQS</a></li>
+                                data-i18n="footerNav.termsOfUse">FAQS</a>
+                        </li>
                         </li>
                         <li>
                             <a data-href-val="#terms-of-use" href="#terms-of-use" class="internalLinks"
-                            data-i18n="footerNav.termsOfUse">Cookie preferences</a></li>
+                                data-i18n="footerNav.termsOfUse">Cookie preferences</a>
+                        </li>
                         </li>
                     </ul>
                 </div>
 
-               
+
             </div>
             <div class="lanuguage_copyright">
                 <span class="copyright">
-                    © 
+                    ©
                     <span data-i18n="copyright">2003-2023 Formula One World Championship Limited</span>
                 </span>
             </div>
