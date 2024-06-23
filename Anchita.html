@@ -22,11 +22,11 @@
             background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
         }
 
-      
 
-      p{
-        padding: 10px;
-      }
+
+        p {
+            padding: 10px;
+        }
 
         .cards-wrapper {
             display: grid;
@@ -46,19 +46,24 @@
             .cards-wrapper {
                 grid-template-columns: 1fr;
             }
+
             .bottom-container {
                 padding: 5px;
             }
-            p{
+
+            h1#birthday-message {
+                color: fuchsia;
+            }
+
+            p {
                 font-size: 17px;
                 padding: 5px;
             }
-          
+
             header h1 {
-                font-size: 4vw;
-                /* Adjust the font size for smaller screens */
+                font-size: 6vw;
                 white-space: nowrap;
-                /* Prevent text from wrapping */
+                margin-top: 29px;
             }
         }
 
@@ -71,6 +76,10 @@
             overflow: hidden;
             position: relative;
             transition: transform 0.2s;
+        }
+
+        h1#birthday-message {
+            color: fuchsia;
         }
 
         .image-container {
